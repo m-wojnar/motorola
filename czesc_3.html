@@ -34,22 +34,18 @@
             </div>
         </div>
         
-        <!-- jak zmodyfikować listę -->
         <script type="text/javascript">
-            let list = document.querySelector('#list');
-            list.style.visibility = 'visible';
             let box = document.querySelector('#click');
-            box.style.visibility = 'hidden';
-            
-            let items = document.querySelectorAll('#list li');
-            let startValue = 1;
-            
-            setInterval(() => {
-                items.forEach((li, index) => {
-                    li.textContent = `Element ${index + startValue}`;
-                });
-                startValue++;
-            }, 1000);
+            let score = 0;
+            box.addEventListener('click', () => {
+                score++;
+                box.textContent = `Wynik: ${score}`;
+                if (score % 2 === 0) {
+                    box.style.backgroundColor = 'lightgreen';
+                } else {
+                    box.style.backgroundColor = 'red';
+                }
+            });
         </script>
     </body>
 </html>
