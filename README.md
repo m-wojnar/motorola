@@ -55,19 +55,18 @@ b) Dokumentacja:
 
 - Dodanie skryptów PixiJS
 - Stworzenie aplikacji PixiJS
-- Dodanie pierwszy zasób (gracz.png) i stworzenie gracza
+- Dodanie pierwszego zasobu (gracz.png) i stworzenie gracza
 - Uwaga o prawach autorskich, jak korzystać z własności intelektualnej zgodnie z licencjami, CC0, ([przykładowe źródło zasobów](https://opengameart.org/), skąd pochodzą zasoby dla tej gry)
 - Załadowanie i dodanie tła
 - Sterowanie klawiaturą (event listener + app.ticker.add)
 - Spadające obiekty
 - Aktualizacja pozycji spadających obiektów
 - Wykrywanie kolizji
-- Wyświetlanie wyniku i liczby żyć
-- Wyświetlanie ekranu końca gry
-- Aktualizacja trudności gry i dostosowywanie prędkości, wyniku i częstotliwości pojawiania się obiektów do aktualnej trudności
+- Wyświetlanie wyniku, liczby żyć i końca gry
 - Ładowanie i dodawanie dźwięków
+- Zwiększanie trudności gry z czasem
 - **Zadanie domowe 5:**
-    1. Zmień teksturę gracza w zależności od ruchu (twarz w lewo lub w prawo)
+    1. Zmień teksturę gracza w zależności od ruchu (twarz w lewo lub w prawo). *Podpowiedź*: obiekt można odbić lustrzanie przez ustawienie ujemnej skali.
     2. Dodaj wiatr - spraw, aby jabłka spadały krzywo (pamiętaj, że jabłka nie mogą wyjść poza ekran!)
     3. Dodaj restart (naciśnij spację na początku i po zakończeniu gry)
     4. Dodaj tablicę wyników (pokaż 3 najlepsze wyniki na ekranie końca gry)
