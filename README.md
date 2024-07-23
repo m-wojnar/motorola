@@ -71,13 +71,13 @@ Przeanalizuj zawartość wybranej strony internetowej (np. [https://www.tryit.or
 
 Mając dostęp do interaktywnej konsoli, możemy wykonać zadania z pliku [`czesc_2.js`](https://github.com/m-wojnar/motorola/blob/czesc-2/czesc_2.js). Nawigujemy po kolejnych zdanaiach (commitach):
 
-- [`commit 1d476ab`](https://github.com/m-wojnar/motorola/pull/1/commits/1d476abb6e87ed27c0126eea843b442670138061) nauka wypisywania na ekran i tworzenia komentarzy
-- [`commit 3e8c086`](https://github.com/m-wojnar/motorola/pull/1/commits/3e8c0863064ca86163448193e43e99c3d7aeb93f) nauka używania zmiennych i operatorów
-- [`commit 73465bd`](https://github.com/m-wojnar/motorola/pull/1/commits/73465bdf753097e2ed357de187cef288ddfd541b) nauka pisania prostych funkcji
-- [`commit cf7b028`](https://github.com/m-wojnar/motorola/pull/1/commits/cf7b0288a54e37ceef5047e5a427e5f9e9f68d76) nauka używania list i obiektów
-- [`commit cf34c71`](https://github.com/m-wojnar/motorola/pull/1/commits/cf34c71e9ba61b917004b5cefb943cfa605b95c9) nauka pisania instrukcji warunkowych (if-else)
-- [`commit 2c18ff3`](https://github.com/m-wojnar/motorola/pull/1/commits/2c18ff3d7571c6ce5724846b14ecf1c06ef50ff4) nauka pisania pętli (for, while)
-- [`commit 8841d1f`](https://github.com/m-wojnar/motorola/pull/1/commits/8841d1f8566aa8a2ec0f374d99ef72ac1fa78af9) nauka tworzenia prostej klasy
+- [`commit 1d476ab`](https://github.com/m-wojnar/motorola/pull/1/commits/1d476abb6e87ed27c0126eea843b442670138061) Nauka wypisywania na ekran i tworzenia komentarzy
+- [`commit 3e8c086`](https://github.com/m-wojnar/motorola/pull/1/commits/3e8c0863064ca86163448193e43e99c3d7aeb93f) Nauka używania zmiennych i operatorów
+- [`commit 73465bd`](https://github.com/m-wojnar/motorola/pull/1/commits/73465bdf753097e2ed357de187cef288ddfd541b) Nauka pisania prostych funkcji
+- [`commit cf7b028`](https://github.com/m-wojnar/motorola/pull/1/commits/cf7b0288a54e37ceef5047e5a427e5f9e9f68d76) Nauka używania list i obiektów
+- [`commit cf34c71`](https://github.com/m-wojnar/motorola/pull/1/commits/cf34c71e9ba61b917004b5cefb943cfa605b95c9) Nauka pisania instrukcji warunkowych (if-else)
+- [`commit 2c18ff3`](https://github.com/m-wojnar/motorola/pull/1/commits/2c18ff3d7571c6ce5724846b14ecf1c06ef50ff4) Nauka pisania pętli (for, while)
+- [`commit 8841d1f`](https://github.com/m-wojnar/motorola/pull/1/commits/8841d1f8566aa8a2ec0f374d99ef72ac1fa78af9) Nauka tworzenia prostej klasy
 
 #### **Zadanie domowe 2**
 
