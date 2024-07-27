@@ -20,17 +20,6 @@ TODO: Zamieścić link do filmiku.
    
 ## 1. Środowisko pracy
 
-### Edytor kodu
-
-Zalecanym edytorem kodu do realizacji zadań w kursie jest VS Code. Można go pobrać ze strony [Visual Studio Code](https://code.visualstudio.com/). Wspiera wszystkie popularne systemy operacyjne (Windows, Linux, MacOS).
-
-### Rozszerzenie "Live Server"
-
-Aby uruchamiać pliki HTML z kodem JavaScript w przeglądarce, należy zainstalować rozszerzenie "Live Server", które umożliwia automatyczne przeładowywanie strony po zapisaniu zmian w pliku. W tym celu, należy:
-- uruchomić VS Code
-- przejść do zakładki *Extensions* i wyszukać rozszerzenie "Live Server"
-- Zainstalować rozszerzenie
-
 ### Nawigacja po kursie 
 
 Kurs składa się z kilku części (patrz [spis treści](#spis-treści)), każda z nich jest na wydzielonym branchu wraz z utworzonym Pull Requestem. Dodatkowo, części podzielone są na zadania reprezentowane przez commity danej części kursu. W trakcji realizacji kurs, kursant powinien przechodzić przez poszczególne branche i commity, aby ostatecznie zrealizować wszystkie zadania. Kurs nie ma na celu nauki systemów wersjonowania kodu, jednak dla wygody kursantów, przedstawiamy potrzebne komendy do nawigacji po kursie:
@@ -43,8 +32,7 @@ cd motorola
 
 Po sklonowaniu repozytorium znajdujemy się na branchu `main`, czyli głównym branchu repozytorium. Aby przejść do konkretnej części kursu, reprezentowanej przez oddzielny branch, należy wykonać komendę:
 ```bash
-git checkout -t origin/nazwa_brancha    # jeżeli przechodzimy na dany branch po raz pierwszy
-git checkout nazwa_brancha              # jeżeli przechodzimy na dany branch po raz kolejny
+git checkout nazwa_brancha
 ```
 
 Po przejściu na odpowiedni branch, możemy sprawdzić listę commitów, które reprezentują zadania do wykonania w danej części kursu. W tym celu, należy wykonać komendę:
@@ -56,6 +44,17 @@ Każdy commit odpowiada konkretnemu zadaniu. Aby poruszać się między commita
 ```bash
 git checkout id_commitu
 ```
+
+### Edytor kodu
+
+Zalecanym edytorem kodu do realizacji zadań w kursie jest VS Code. Można go pobrać ze strony [Visual Studio Code](https://code.visualstudio.com/). Wspiera wszystkie popularne systemy operacyjne (Windows, Linux, MacOS).
+
+### Rozszerzenie "Live Server"
+
+Aby uruchamiać pliki HTML z kodem JavaScript w przeglądarce, należy zainstalować rozszerzenie "Live Server", które umożliwia automatyczne przeładowywanie strony po zapisaniu zmian w pliku. W tym celu, należy:
+- uruchomić VS Code
+- przejść do zakładki *Extensions* i wyszukać rozszerzenie "Live Server"
+- Zainstalować rozszerzenie
 
 ## 2. Czysty JavaScript
 
