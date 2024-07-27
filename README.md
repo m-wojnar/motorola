@@ -1,6 +1,14 @@
 # Podstawowy kurs języka JavaScript
 
-Tutaj opis kursu, dla kogo jest skierowany, jakie są wymagania wstępne, co uczestnik kursu będzie umiał po jego ukończeniu. TODO: Zamieścić link do filmiku.
+Chcesz nauczyć się JavaScript w ciekawy i angażujący sposób? Zapraszamy na nasz kurs, który łączy naukę podstaw tego języka z tworzeniem prostej, ale wciągającej gry! Kurs jest przede wszystkim skierowany do uczestniczek programu TryIT, ale także dla każdego, kto chce w ciekawy sposób poznać podstawy JavaScript. Wymagana jest umiejętność programowania w dowolnym innym języku, abyś posiadał/a znajomość podstawowych struktur używanych w programowaniu.
+
+Podczas kursu nauczysz się podstaw składni JavaScript, manipulacji DOM, a na koniec zbudujesz grę "Łapanie Jabłek" przy użyciu biblioteki PixiJS. Po ukończeniu kursu będziesz umiał/a:
+
+- pisać skrypty JavaScript od podstaw,
+- wykorzystywać obiektowy model dokumentu (DOM) do manipulacji stroną,
+- tworzyć gry 2D z użyciem PixiJS.
+
+TODO: Zamieścić link do filmiku.
 
 ## Spis treści
 
