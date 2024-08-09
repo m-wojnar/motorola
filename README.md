@@ -59,10 +59,8 @@ Aby uruchamiać pliki HTML z kodem JavaScript w przeglądarce, należy zainstalo
 ## 2. Czysty JavaScript
 
 Pierwsza właściwa część kursu ma na celu zapoznać kursanta ze składnią języka JavaScript, podstawowymi instrukcjami oraz obsługi konsoli dewelopera JS w przeglądarce. Aby przejść do tej części kursu, należy wykonać komendę:
-```bash
-git checkout -t origin/czesc-2
 
-# lub, jeżeli branch został wcześniej pobrany na lokalne repozytorium:
+```bash
 git checkout czesc-2
 ```
 
@@ -114,10 +112,8 @@ W dokumentacji znajdź informacje o typach zmiennych w JS i spróbuj napisać ki
 ## 3. Obiektowy Model Dokumentu
 
 Obiektowy Model Dokumentu (ang. Document Object Model, DOM) to reprezentacja dokumentu HTML w postaci drzewa obiektów. Pozwala na manipulację zawartością strony internetowej za pomocą języka JavaScript. Aby przejść do tej części kursu, należy wykonać komendę:
-```bash
-git checkout -t origin/czesc-3
 
-# lub, jeżeli branch został wcześniej pobrany na lokalne repozytorium:
+```bash
 git checkout czesc-3
 ```
 
@@ -141,10 +137,8 @@ Zmień kolor pudełka na jasnozielony, jeśli liczba kliknięć jest parzysta, a
 ## 4. Gra w Łapanie Jabłek
 
 Ostatnia część kursu to zebranie wszystkich dotychczasowych umiejętności w jednym projekcie - grze w łapanie jabłek. Aby przejść do tej części kursu, należy wykonać komendę:
-```bash
-git checkout -t origin/czesc-4
 
-# lub, jeżeli branch został wcześniej pobrany na lokalne repozytorium:
+```bash
 git checkout czesc-4
 ```
 
