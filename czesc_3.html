@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>JavaScript na stronie internetowej</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: lightblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="click">Kliknij!</div>
+            <div class="box" id="list" style="visibility: hidden;">
+                <ul>
+                    <li>Element 1</li>
+                    <li>Element 2</li>
+                    <li>Element 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- jak wyświetlić wiadomość-->
+        <!-- <script type="text/javascript">
+            alert('Witaj Świecie!');
+            let name = prompt('Jak się nazywasz?');
+            let sure = confirm('Czy jesteś pewien?');
+            console.log(`${name} jest pewien swojego imienia: ${sure}`);
+        </script> -->
+
+        <!-- jak dostać się do elemetu dom i zmienić jego styl-->
+        <!-- <script type="text/javascript">
+            setTimeout(() => {
+                let box = document.querySelector('#click');
+                box.style.backgroundColor = 'lightgreen';
+            }, 3000); // zaczekaj 3 sekundy przed zmianą koloru
+        </script> -->
+
+        <!-- jak dodać do elementu dom schemat `event listener`-->
+        <!-- <script type="text/javascript">
+            let box = document.querySelector('#click');
+            let score = 0;
+            box.addEventListener('click', () => {
+                score++;
+                box.textContent = `Wynik: ${score}`;
+            });
+        </script> -->
+
+        <!-- jak utworzyć albo usunąć element dom-->
+        <!-- <script type="text/javascript">
+            setTimeout(() => {
+                let box = document.querySelector('#click');
+                let message = document.createElement('div');
+                message.textContent = 'Dodadkowa wiadomość';
+                message.style.color = 'red';
+                box.appendChild(message);
+
+                setTimeout(() => {
+                    box.removeChild(message);
+                }, 2000);
+            }, 3000);
+        </script> -->
+
+        <!-- Jak zmodyfikować listę-->
+        <!-- <script type="text/javascript">
+            let list = document.querySelector('#list');
+            list.style.visibility = 'visible';
+            let box = document.querySelector('#click');
+            box.style.visibility = 'hidden';
+            
+            let items = document.querySelectorAll('#list li');
+            let startValue = 1;
+            
+            setInterval(() => {
+                items.forEach((li, index) => {
+                    li.textContent = `Element ${index + startValue}`;
+                });
+                startValue++;
+            }, 1000);
+        </script> -->
+
+        <!-- zdanie domowe (przedstawić rozwiązanie w osobnym pliku lub repozytorium) -->
+        <!-- <script type="text/javascript">
+            let box = document.querySelector('#click');
+            let score = 0;
+            box.addEventListener('click', () => {
+                score++;
+                box.textContent = `Wynik: ${score}`;
+                if (score % 2 === 0) {
+                    box.style.backgroundColor = 'lightgreen';
+                } else {
+                    box.style.backgroundColor = 'red';
+                }
+            });
+        </script> -->
+        
+        <!-- <script type="text/javascript">
+            let box = document.querySelector('#click');
+            let score = 0;
+            box.addEventListener('click', () => {
+                score++;
+                box.textContent = `Wynik: ${score}`;
+                if (score % 2 === 0) {
+                    box.style.backgroundColor = 'lightgreen';
+                } else {
+                    box.style.backgroundColor = 'red';
+                }
+            });
+        </script> -->
+    </body>
+</html>
