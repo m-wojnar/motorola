@@ -8,7 +8,9 @@
 - Tytuł: "Podstawowy kurs języka JavaScript - Część 1"
 
 **Narracja**:
-"Witaj w pierwszej części kursu JavaScript stworzonego przez fundację TryIT! Dzięki niemu będziesz miała możliwość realnie wykorzystać wiedzę zdobytą podczas warsztatów. Już teraz gratulujemy Ci zaangażowania w informatyczne przedsięwzięcie, które z pewnością rozwinie Twoje kompetencje. Tym bardziej zachęcamy Cię do aktywnego uczestnictwa w zadaniach, które dla Ciebie przygotowaliśmy. Przystępna forma filmiku instruktażowego pozwala na podążanie za kolejnymi etapami we własnym tempie. W tym odcinku nauczymy Cię podstaw języka JavaScript oraz pracy z Obiektowym Modelem Dokumentu (DOM). Kurs jest przeznaczony dla uczestniczek kursu (TryIT?) oraz wszystkich, którzy chcą nauczyć się JavaScript w ciekawy sposób. Aby w pełni skorzystać z kursu, wymagana jest umiejętność programowania w dowolnym innym języku, w szczególności znajomość podstawowych struktur używanych w programowaniu. Oczywiście nie może zabraknąć Twojej chęci i poświęcenia temu zadaniu uwagi. Do dzieła!"
+"Witaj w pierwszej części kursu opracowanego przez fundację TryIT, poświęconego jezykowi programowania JavaScript! Dzięki niemu będziesz mogła rozszerzyć wiedzę zdobytą podczas warsztatów. Przystępna forma filmiku instruktażowego pozwala na podążanie za kolejnymi etapami we własnym tempie. W tym odcinku nauczymy Cię podstaw języka JavaScript oraz pracy z Obiektowym Modelem Dokumentu (DOM). Już teraz zachęcamy Cię do rozwiązania dodatkowych zadań, które dla Ciebie przygotowaliśmy, które mają na celu ugruntowanie zdobywanej wiedzy. 
+
+Niniejszy kurs jest przeznaczony dla uczestniczek programu "Girls Go IT" oraz wszystkich, którzy chcą nauczyć się JavaScript w ciekawy sposób. Aby w pełni skorzystać z kursu, wymagana jest umiejętność programowania w dowolnym innym języku, w szczególności znajomość podstawowych struktur używanych w programowaniu."
 
 ---
 
@@ -22,7 +24,7 @@
   3. Obiektowy Model Dokumentu
 
 **Narracja**:
-"Przed Wami plan naszego pierwszego odcinka. Zaczniemy od przygotowania środowiska pracy, przejdziemy przez podstawy JavaScript, a na końcu zajmiemy się manipulacją DOM. Zaczynajmy!"
+"Przed Wami plan naszego pierwszego odcinka. Zaczniemy od przygotowania środowiska pracy, przejdziemy przez podstawy języka JavaScript, a na końcu zajmiemy się manipulacją DOM. Zaczynajmy!"
 
 ---
 
@@ -43,9 +45,9 @@
   2. Aby zobaczyć historię commitów, użyj polecenia: `git log`.
 
 **Narracja**:
-"Zobacz, jak poruszać się po kursie. Na początek, otwórz w przeglądarce nasze repozytorium z kodem. Po lewej stronie widnieje zakładka "branches". Kliknij na nią, aby zobaczyć listę wszystkich dostępnych branchy w repozytorium. Jak widzisz, mamy kilka branchy, które odpowiadają fragmentom kursu i zadaniom domowym. Teraz przejdź do zakładki "Pull requests" i wybierz PR związany z pierwszą częścią kursu. Widoczny jest spis commitów, które były częścią tego PR. Kliknij na jeden z nich, aby zobaczyć zmiany w kodzie dotyczące dane zadania. Teraz znajdź PR z zadaniem domowym. Otwierając go, możesz przejrzeć przykładowe rozwiązania zadania domowego w zakładce "Files changed".
+"Zobacz, jak poruszać się po kursie. Na początek, otwórz w przeglądarce repozytorium z kodem. Po lewej stronie widnieje zakładka "branches". Kliknij na nią, aby zobaczyć listę wszystkich dostępnych branchy (odgałęzień) w repozytorium. Jak widzisz, mamy kilka branchy (gałęzi), które odpowiadają poszczególnym fragmentom kursu i zadaniom domowym. Teraz przejdź do zakładki "Pull requests" i wybierz "pull request" związany z pierwszą częścią kursu. Widoczny jest spis commitów, które były częścią tego "pull request". Kliknij na jeden z nich, aby zobaczyć zmiany w kodzie dotyczące danego zadania. Teraz znajdź "pull request" z zadaniem domowym. Otwierając go, możesz przejrzeć przykładowe rozwiązania zadania domowego w zakładce "Files changed".
 
-Przejdź teraz do sklonowania repozytorium kursu. Otwórz terminal lub konsolę na swoim komputerze. Użyjesz polecenia: git clone wraz z linkiem do naszego repozytorium. Pobierze ono całe repozytorium na nasz komputer. Aby przejść do odpowiedniego brancha, użyjemy polecenia: git checkout. Aby zobaczyć historię commitów, które zostały wykonane w repozytorium, użyj polecenia: git log. Wyświetli ono listę wszystkich commitów wraz z ich identyfikatorami, autorami i wiadomościami."
+Przejdź teraz do sklonowania repozytorium kursu. Otwórz terminal lub konsolę na swoim komputerze. Użyjesz polecenia: git clone wraz z linkiem do naszego repozytorium. Pobierze ono całe repozytorium na twój komputer. Aby przejść do odpowiedniego brancha, użyjesz polecenia: git checkout. Aby zobaczyć historię commitów, które zostały wykonane w repozytorium, użyj polecenia: git log. Wyświetli ono listę wszystkich commitów wraz z ich identyfikatorami, autorami i wiadomościami."
 
 ---
 
@@ -61,7 +63,7 @@ Przejdź teraz do sklonowania repozytorium kursu. Otwórz terminal lub konsolę 
   3. Wyszukaj "Live Server" i kliknij "Install".
 
 **Narracja**:
-"Przejdź teraz do instalacji i konfiguracji naszego środowiska pracy. Zalecamy użycie edytora kodu Visual Studio Code oraz przeglądarki Google Chrome. Dodatkowo, zainstalujemy rozszerzenie Live Server, aby łatwo uruchamiać pliki HTML z poziomu edytora z możliwością automatycznego przeładowania strony po zapisaniu pliku. Otwórz stronę Visual Studio Code i pobierz wersję dla swojego systemu operacyjnego. Po zainstalowaniu, otwórz VS Code i zainstaluj rozszerzenie Live Server."
+"Przejdź teraz do instalacji i konfiguracji środowiska pracy. Zalecamy użycie edytora kodu Visual Studio Code oraz przeglądarki Google Chrome. Dodatkowo, zainstalujemy rozszerzenie Live Server, aby łatwo uruchamiać pliki HTML z poziomu edytora z możliwością automatycznego przeładowania strony po zapisaniu pliku. Otwórz stronę Visual Studio Code i pobierz wersję dla swojego systemu operacyjnego. Po zainstalowaniu, otwórz VS Code i zainstaluj rozszerzenie Live Server."
 
 ---
 
@@ -70,7 +72,7 @@ Przejdź teraz do sklonowania repozytorium kursu. Otwórz terminal lub konsolę 
 **Opis nagrania**:
 - Otwieranie konsoli dewelopera w przeglądarce Chrome:
   1. Otwórz przeglądarkę Chrome.
-  2. Naciśnij klawisz F12 lub kliknij prawym przyciskiem myszy na stronie i wybierz "Zbadaj".
+  2. Naciśnij klawisz F12 lub kliknij prawym przyciskiem myszy na stronie i wybierz "Zbadaj" (Inspect).
   3. Przejdź do zakładki "Console".
 
 **Narracja**:
@@ -98,7 +100,7 @@ Przejdź teraz do sklonowania repozytorium kursu. Otwórz terminal lub konsolę 
 **Narracja**:
 "Teraz przejdziemy przez podstawy programowania w JavaScript, omawiając kluczowe elementy tego języka.
 
-Zaczniemy od najprostszej operacji, jaką jest wypisanie wiadomości do konsoli. Aby to zrobić, używamy funkcji `console.log`, po której umieszczamy tekst, który chcemy wyświetlić. Pamiętaj, aby każdą instrukcję kończyć średnikiem, co jest dobrą praktyką w JavaScript.
+Zaczniemy od najprostszej operacji, jaką jest wypisanie wiadomości do konsoli. Aby to zrobić, używamy funkcji `console.log`, po której umieszczamy tekst, który chcemy wyświetlić. Pamiętaj, aby każdą instrukcję kończyć średnikiem, co jest dobrą praktyką w przypadku języka JavaScript.
 
 Kolejny ważny element to komentarze. Komentarze pozwalają na dodawanie notatek do kodu, które nie są wykonywane przez program. Mamy dwa rodzaje komentarzy: jednolinijkowe, które zaczynają się od dwóch ukośników, oraz wielolinijkowe, które zaczynają się od ukośnika i gwiazdki, a kończą na odwrót.
 
@@ -110,7 +112,7 @@ JavaScript jest językiem dynamicznie typowanym, co oznacza, że typ zmiennej je
 
 Stałe deklarujemy używając słowa kluczowego `const`. Stałym nie można przypisać nowej wartości po ich zdefiniowaniu, co jest przydatne w sytuacjach, gdy chcemy, aby pewna wartość pozostała niezmienna.
 
-Funkcje w JavaScript można tworzyć na kilka sposobów. W tradycyjnej deklaracji funkcji używamy słowa kluczowego `function`, po którym następuje nazwa funkcji, parametry i jej ciało. Możemy również użyć funkcji strzałkowych, które są bardziej zwięzłe i czasami wygodniejsze w użyciu.
+Funkcje w JavaScript można tworzyć na kilka sposobów. W tradycyjnej deklaracji funkcji używamy słowa kluczowego `function`, po którym następuje nazwa funkcji, parametry i jej zawartość. Możemy również użyć funkcji strzałkowych, które są bardziej zwięzłe i czasami wygodniejsze w użyciu.
 
 Tablice pozwalają na przechowywanie listy wartości. Możemy uzyskać dostęp do elementów tablicy za pomocą indeksów, dodawać nowe elementy na końcu tablicy oraz usuwać ostatnie elementy. Możemy również usuwać dowolne elementy z tablicy za pomocą specjalnej metody.
 
@@ -144,11 +146,11 @@ Na koniec omówimy klasy w JavaScript. Klasa to definicja struktury danych zawie
 
 **Narracja:**
 
-"W zadaniu domowym 2 będziemy tworzyć funkcję, która przyjmuje dwa argumenty: imię i wiek użytkownika. Naszym celem jest, aby funkcja zwracała obiekt zawierający imię, wiek, informację o pełnoletniości użytkownika oraz informację o parzystości wieku.
+"W zadaniu domowym 2 należy stworzyć funkcję, która przyjmuje dwa argumenty: imię i wiek użytkownika. Twoim celem jest, aby funkcja zwracała obiekt zawierający imię, wiek, informację o pełnoletniości użytkownika oraz informację o parzystości wieku.
 
-Następnie utworzymy listę z 5 imionami i napiszemy pętlę, która przechodzi po wszystkich elementach tej listy. W każdej iteracji podamy imię użytkownika i wylosujemy jego wiek przy użyciu funkcji `getRandomInt`. Jeśli wiek użytkownika będzie liczbą parzystą, wypiszemy jego dane na ekranie.
+Następnie powinieneś utworzyć listę z 5 imionami i napisać pętlę, która przechodzi po wszystkich elementach tej listy. W każdej iteracji powienieneś podać imię użytkownika i wylosować jego wiek przy użyciu funkcji `getRandomInt`. Jeśli wiek użytkownika będzie liczbą parzystą, wypisz jego dane na ekranie.
 
-Oto funkcja `getRandomInt`, która losuje liczbę całkowitą z zadanego przedziału, co pomoże nam w losowaniu wieku użytkowników."
+Oto funkcja `getRandomInt`, która losuje liczbę całkowitą z zadanego przedziału (min, max). Użyj jej do losowania wieku użytkowników."
 
 ---
 
@@ -165,7 +167,7 @@ Oto funkcja `getRandomInt`, która losuje liczbę całkowitą z zadanego przedzi
 
 Jednym z najlepszych źródeł informacji jest strona javascript.info, która oferuje szczegółowe i dobrze zorganizowane artykuły na temat JavaScript. Kolejnym wartościowym źródłem jest w3schools.com/js, gdzie znajdziesz mnóstwo praktycznych przykładów i interaktywnych samouczków.
 
-Zachęcamy Cię do regularnego odwiedzania dokumentacji, eksperymentowania z kodem i samodzielnego rozwiązywania problemów. Im więcej praktyki, tym lepiej opanujecie JavaScript i zrozumiecie, jak tworzyć dynamiczne i interaktywne strony internetowe."
+Zachęcamy Cię do regularnego odwiedzania dokumentacji, eksperymentowania z kodem i samodzielnego rozwiązywania problemów. Im więcej praktyki, tym lepiej opanujesz JavaScript i zrozumiesz, jak tworzyć dynamiczne i interaktywne strony internetowe."
 
 ---
 
@@ -174,15 +176,15 @@ Zachęcamy Cię do regularnego odwiedzania dokumentacji, eksperymentowania z kod
 **Opis slajdu**:
 - Tytuł: "Zadanie domowe 3"
 - Treść:
-  - W dokumentacji znajdź informacje o typach zmiennych w JS.
+  - W dokumentacji znajdź informacje o typach zmiennych występujących w języku JavaScript.
   - Spróbuj napisać kilka instrukcji warunkowych ze zmiennymi różnych typów.
 
 **Narracja**:
-"Trzecie zadanie domowe polega na zapoznaniu się z typami zmiennych w języku JavaScript. Zacznij od przeszukania dokumentacji, aby znaleźć szczegółowe informacje o różnych typach zmiennych, takich jak stringi, liczby, boolean, null czy undefined.
+Trzecie zadanie domowe polega na zapoznaniu się z typami zmiennych w języku JavaScript. Zacznij od przeszukania dokumentacji, aby znaleźć szczegółowe informacje o różnych typach zmiennych, takich jak zmienne łańcuchowe (string), liczby, wartości logiczne (boolean), zmienne bez przypisanej wartości (typ null), zmienne niezdefiniowane (typ undefined).
 
 Następnie spróbuj napisać kilka instrukcji warunkowych, w których użyjesz zmiennych różnych typów. Możesz na przykład sprawdzić, czy zmienna jest liczbą, czy stringiem, albo porównać dwie zmienne różnych typów.
 
-To ćwiczenie pomoże Ci lepiej zrozumieć, jak działają typy zmiennych w JavaScript oraz jak można je efektywnie wykorzystać w kodzie."
+To ćwiczenie pomoże Ci lepiej zrozumieć, jak działają typy zmiennych w języku JavaScript oraz jak można je efektywnie wykorzystać podczas pisania kodu Twoich przyszłych programów."
 
 ---
 
@@ -191,7 +193,7 @@ To ćwiczenie pomoże Ci lepiej zrozumieć, jak działają typy zmiennych w Java
 **Opis slajdu**:
 - Tytuł: "3. Obiektowy Model Dokumentu (DOM)"
 - Treść:
-  - Obiektowy model dokumentu (ang. Document Object Model, DOM) – sposób reprezentacji złożonych dokumentów XML i HTML w postaci modelu obiektowego. 
+  - Obiektowy model dokumentu (ang. Document Object Model, DOM) jest to sposób reprezentacji złożonych dokumentów XML i HTML w postaci modelu obiektowego. 
 - Ilustracja: 
   - Duże drzewo z rozgałęzieniami. Na samej górze drzewa znajduje się prostokąt oznaczony jako document lub HTML. Bezpośrednio pod nim, jako dzieci, są dwa prostokąty oznaczone jako `head` i `body`. Pod `head` mogą być pokazane przykładowe dzieci, takie jak `title` czy `meta`. Pod `body` narysowane są różne węzły reprezentujące typowe elementy HTML, takie jak `h1`, `p`, `div`. Na przykład, `ul` może mieć pod sobą kilka `li`, co ilustruje pojęcie dzieci w węzłach DOM. Każdy węzeł może być przedstawiony jako prostokąt w rónych kolorach w zaleności od typu.
   - Jeśli się zmieści, to wynikowa strona HTML odpowiadająca temu drzewu DOM, ewentualnie strzałki pomiędzy wybranymi węzłami i elementami strony.
@@ -199,7 +201,7 @@ To ćwiczenie pomoże Ci lepiej zrozumieć, jak działają typy zmiennych w Java
 **Narracja**:
 "Document Object Model, w skrócie DOM, jest hierarchiczną strukturą danych, która reprezentuje stronę HTML jako zestaw połączonych ze sobą obiektów. Możemy myśleć o DOM jak o drzewie, gdzie każdy element strony jest węzłem tego drzewa. Węzły mogą mieć dzieci, które są innymi węzłami. Na przykład, element `ul` może mieć dzieci w postaci elementów `li`.
 
-Dzięki tej strukturze drzewa, skrypty, takie jak JavaScript, mogą dynamicznie manipulować treścią, strukturą i stylami strony internetowej. Możemy używać JavaScriptu do zmiany tekstu nagłówka, dodawania nowych elementów do strony, czy też modyfikacji atrybutów istniejących elementów. DOM umożliwia łatwy dostęp do każdej części dokumentu poprzez nawigację po węzłach drzewa. Dzięki temu możemy tworzyć interaktywne i dynamiczne strony internetowe."
+Dzięki tej strukturze drzewa, skrypty, np. napisane z użyciem języka JavaScript, mogą dynamicznie manipulować treścią, strukturą i stylami strony internetowej. Możemy używać skryptów JavaScript do zmiany tekstu nagłówka, dodawania nowych elementów do strony, czy też modyfikacji atrybutów istniejących elementów. DOM umożliwia łatwy dostęp do każdej części dokumentu poprzez nawigację po węzłach drzewa. Dzięki temu możemy tworzyć interaktywne i dynamiczne strony internetowe."
 
 ---
 
@@ -211,15 +213,15 @@ Dzięki tej strukturze drzewa, skrypty, takie jak JavaScript, mogą dynamicznie 
 - Po każdym fragmencie przeładowanie strony i pokazanie oczekiwanego efektu.
 
 **Narracja**:
-"Zaczynamy od struktury dokumentu HTML. W naszym przykładzie definiujemy styl dla całej strony, używając selektora body i klasy `container` oraz `box`. Te style określają wygląd elementów, takie jak czcionka, układ oraz kolory. W sekcji `body` mamy dwa główne elementy `div` z klasą `box`. Jeden z nich ma identyfikator `click`, a drugi `list`. Element `click` wyświetla tekst 'Kliknij!', a element list zawiera ukrytą listę punktowaną, która stanie się widoczna po pewnych operacjach. Otwórz plik w VS Code i użyjLive Server, aby na żywo obserwować zmiany na stronie. Po każdym zapisie pliku, strona zostanie przeładowana i od razu zobaczysz wprowadzone zmiany.
+"Zaczynamy od struktury dokumentu HTML. W naszym przykładzie definiujemy styl dla całej strony, używając selektora body i klasy `container` oraz `box`. Te style określają wygląd elementów, takie jak czcionka, układ oraz kolory. W sekcji `body` mamy dwa główne elementy `div` z klasą `box`. Jeden z nich ma identyfikator `click`, a drugi `list`. Element `click` wyświetla tekst 'Kliknij!', a element list zawiera ukrytą listę punktowaną, która stanie się widoczna po przeprowadzeniu pewnych operacji w dalszej części kursu. Otwórz plik w VS Code i użyj Live Server, aby na żywo obserwować zmiany na stronie. Po każdym zapisie pliku, strona zostanie przeładowana i od razu zobaczysz wprowadzone zmiany.
 
-Teraz przejdź do wstawienia JavaScript do strony HTML. Skrypty JavaScript umieszczasz wewnątrz znaczników script. Zobacz teraz kilka przykładów, które pokazują różne sposoby użycia JavaScript do manipulacji stroną.
+Teraz przejdź do wstawienia JavaScript do strony HTML. Skrypty JavaScript umieszcza się wewnątrz znaczników script. Zobacz teraz kilka przykładów, które pokazują różne sposoby użycia JavaScript do manipulacji stroną.
 
 Pierwszy przykład pokazuje, jak wyświetlić wiadomość użytkownikowi. Używamy funkcji `alert`, `prompt` oraz `confirm`, aby wyświetlić okno dialogowe, zapytać użytkownika o imię i sprawdzić, czy jest pewien swojego wyboru. Te komunikaty są przydatne do interakcji z użytkownikiem bezpośrednio z poziomu strony.
 
-W kolejnym przykładzie pokazujemy, jak uzyskać dostęp do elementu DOM i zmienić jego styl. Warto zwrócić uwagę na funkcję `document.querySelector`, która pozwala na uzyskanie uchwytu do odpowiedniego elementu DOM. W naszym przypadku będzie to element o identyfikatorze `click`, dlatego uzyjemy selektora `#click`. Można również uzyskiwać dostęp do obiektów wyszukując po klasie lub strukturze, po więcej szczegółów odsyłamy Was do dokumentacji funkcji `querySelector`. Za pomocą funkcji `setTimeout` ustalamy opóźnione wywołanie wewnętrznej strzałkowej funkcji i zmieniamy kolor tła elementu `click` po trzech sekundach.
+W kolejnym przykładzie pokazujemy, jak uzyskać dostęp do elementu DOM i zmienić jego styl. Warto zwrócić uwagę na funkcję `document.querySelector`, która pozwala na uzyskanie uchwytu do odpowiedniego elementu DOM. W naszym przypadku będzie to element o identyfikatorze `click`, dlatego użyjemy selektora `#click`. Można również uzyskiwać dostęp do obiektów wyszukując po klasie lub strukturze, po więcej szczegółów odsyłamy Was do dokumentacji funkcji `querySelector`. Za pomocą funkcji `setTimeout` ustalamy opóźnione wywołanie wewnętrznej strzałkowej funkcji i zmieniamy kolor tła elementu `click` po trzech sekundach.
 
-Za pomocą funkcji `addEventListener` możemy nasłuchiwać na kliknięcia na elemencie `click`. Każde kliknięcie wywołuje funkcję, która zwiększa wartość zmiennej `score` i aktualizuje tekst wewnątrz elementu.
+Za pomocą funkcji `addEventListener` skrypt może nasłuchiwać kliknięcia na element `click`. Każde kliknięcie wywołuje funkcję, która zwiększa wartość zmiennej `score` i aktualizuje tekst wewnątrz elementu.
 
 Zobaczmy również jak utworzyć nowy element DOM i go usunąć. Tworzymy nowy element `div` za pomocą `document.createElement` i nadajemy mu tekst "Dodatkowa wiadomość" używając `textContent`. Aby wyróżnić ten nowy element, zmieniamy jego kolor tekstu na czerwony, przypisując odpowiednią wartość do stylu `color`. Ten nowo utworzony element dodajemy jako dziecko do elementu `box` za pomocą metody `appendChild`. Dzięki temu nowy element staje się widoczny na stronie wewnątrz elementu `click`. Ponownie używamy `setTimeout`, tym razem aby po dwóch sekundach od dodania elementu usunąć go. Robimy to, wywołując metodę `removeChild` na `box`. W ten sposób, po upływie określonego czasu, element ten zostaje usunięty ze strony.
 
@@ -235,12 +237,12 @@ Ostatni przykład to zadanie domowe, które polega na implementacji logiki zmien
 - Tytuł: "Zadanie domowe 4"
 - Treść:
   - Zmień kolor pudełka na jasnozielony, jeśli liczba kliknięć jest parzysta.
-  - Zmień kolor na czerwony, jeśli liczba kliknięć jest nieparzysta.
+  - Zmień kolor pudełka na czerwony, jeśli liczba kliknięć jest nieparzysta.
 
 **Narracja**:
-"Czwarte zadanie domowe polega na manipulacji elementami HTML przy użyciu JavaScriptu. Twoim zadaniem jest stworzenie prostego interaktywnego pudełka, którego kolor zmienia się w zależności od liczby kliknięć.
+"Czwarte zadanie domowe polega na manipulacji elementami HTML przy użyciu skyprtu napisanego w jęzku JavaScript. Twoim zadaniem jest stworzenie prostego interaktywnego pudełka, którego kolor zmienia się w zależności od liczby kliknięć.
 
-Wykorzystaj element `div` o klasie `boz`. Następnie w JavaScript napisz funkcję, która będzie zliczać kliknięcia na pudełko. W zależności od tego, czy liczba kliknięć jest parzysta czy nieparzysta, zmień kolor pudełka odpowiednio na jasnozielony lub czerwony. Przydadzą się używane przed chwilą funkcje, m.in. `addEventListener`."
+Wykorzystaj element `div` o klasie typu `boz`. Następnie w JavaScript napisz funkcję, która będzie zliczać kliknięcia na pudełko. W zależności od tego, czy liczba kliknięć jest parzysta czy nieparzysta, zmień kolor pudełka odpowiednio na jasnozielony lub czerwony. W rozwiązaniu tego zdania przydadzą Ci się funkcje, których używaliśmy w przedstawionych przykładach, m.in. `addEventListener`."
 
 ---
 
