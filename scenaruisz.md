@@ -266,7 +266,7 @@ Wykorzystaj element `div` o klasie typu `boz`. Następnie w JavaScript napisz fu
 - Tytuł: "Podstawowy kurs języka JavaScript - Część 2"
 
 **Narracja**:
-"Witaj w drugiej części kursu JavaScript stworzonego przez fundację TryIT! W tym odcinku nauczysz się jak stworzyć własną grę w przeglądarce, za pomocą JavaScript! Jeśli nie oglądałaś jeszcze pierwszej częście tego kursu, sugerujemy obejrzenie jej w pierwszej kolejności, jeszcze przed przystąpieniem do implementacji gry. To ułatwi Ci wykonanie zadania 2."
+"Witaj w drugiej części kursu dotyczącego języka JavaScript stworzonego przez fundację TryIT! W tym odcinku nauczysz się jak stworzyć własną grę w przeglądarce, za pomocą języka JavaScript! Jeśli nie oglądałaś jeszcze pierwszej częście tego kursu, sugerujemy obejrzenie jej w pierwszej kolejności, jeszcze przed przystąpieniem do implementacji gry. Ułatwi Ci to wykonanie zadania 2."
 
 ---
 
@@ -277,13 +277,13 @@ Wykorzystaj element `div` o klasie typu `boz`. Następnie w JavaScript napisz fu
 - Pokazanie prostych przykładów gier z dokumentacji (https://pixijs.com/8.x/playground)
 
 **Narracja**:
-"W tym nagraniu przyjrzymy się bibliotece PixiJS, która jest potężnym narzędziem do tworzenia gier i aplikacji graficznych w JavaScript. Zacznijmy od odwiedzenia dokumentacji PixiJS, dostępnej pod adresem `pixijs.com` oraz `pixijs.com/8.x/guides`. Dokumentacja jest świetnym źródłem informacji, które pomogą Wam zrozumieć podstawowe oraz zaawansowane funkcje PixiJS.
+"W tym nagraniu przyjrzymy się bibliotece PixiJS, która jest przydatnym narzędziem do tworzenia gier i aplikacji graficznych w języku JavaScript. Zacznijmy od odwiedzenia dokumentacji biblioteki PixiJS, dostępnej pod adresem `pixijs.com` oraz `pixijs.com/8.x/guides`. Dokumentacja jest świetnym źródłem informacji, które pomogą Wam zrozumieć podstawowe oraz zaawansowane funkcje biblioteki PixiJS.
 
 W sekcji 'Guides' znajdziesz szczegółowe przewodniki, które krok po kroku wprowadzą Cię w różne aspekty używania PixiJS, takie jak tworzenie scen, zarządzanie obiektami graficznymi czy obsługa zdarzeń. Każdy przewodnik jest dobrze opisany i ilustrowany, co ułatwia naukę i implementację.
 
-Następnie, odwiedź stronę z przykładami gier, która znajduje się pod adresem pixijs.com/8.x/playground. Na tej stronie znajdziecie różne przykłady zastosowań PixiJS, które możecie przetestować na żywo. Przykłady te pokazują, jak tworzyć proste gry i efekty graficzne, co może być doskonałym punktem wyjścia dla własnych projektów.
+Następnie, odwiedź stronę z przykładami gier, która znajduje się pod adresem pixijs.com/8.x/playground. Na tej stronie znajdziesz różne przykłady zastosowań biblioteki PixiJS, które możecie przetestować na żywo. Przykłady te pokazują, jak tworzyć proste gry i efekty graficzne, co może być doskonałym punktem wyjścia dla własnych projektów.
 
-Zapraszam Cię do eksploracji dokumentacji oraz przykładów i zachęcam do zabawy z PixiJS. Praktyka z rzeczywistymi przykładami pomoże Ci lepiej zrozumieć jak korzystać z tej biblioteki i przyspieszy Twoją naukę tworzenia dynamicznych i interaktywnych aplikacji graficznych."
+Zapraszamy Cię do zapoznania się z dokumentacją oraz przykładami dostępnymi dla biblioteki PixiJS. Realizacja rzeczywistych przykładów pomoże Ci lepiej zrozumieć jak korzystać z tej biblioteki i z pewnością przyspieszy Twoją naukę tworzenia dynamicznych i interaktywnych aplikacji graficznych."
 
 ---
 
@@ -293,33 +293,33 @@ Zapraszam Cię do eksploracji dokumentacji oraz przykładów i zachęcam do zaba
 - Implementacja gry krok po kroku, a w wyznaczonych momentach zaprezentowanie obecnego stanu gry w przeglądarce (uruchomiona w tle w Live Server). Fragmenty pomiędzy prezentacjami stanu gry odpowiadają kolejnym commitom na branchu `gra`.
 
 **Narracja**:
-"Wszystkie materiały niezbędne w trakcie budowy gry znajdziecie na branchu `materialy`, dlatego przed rozpoczęciem implementacji, warto przełączyć się na ten branch.
+"Wszystkie materiały niezbędne w trakcie budowy gry znajdziesz na branchu `materialy`, dlatego przed rozpoczęciem implementacji, warto przełączyć się na ten branch.
 
-Zacznijmy od stworzenia szkieletu naszej gry 'Łapacz jabłek'. Pierwszym krokiem jest przygotowanie strony HTML, która będzie bazą dla naszej gry. Ustawmy kodowanie znaków, tytuł strony i styl naszej strony. Ustawiamy marginesy html i body na 0px, co usuwa domyślne odstępy wokół treści. Następnie, dla obu tych elementów, ustaw wysokość na 99.5%, co sprawia, że strona zajmuje praktycznie całą wysokość przeglądarki.
-
-[PREZENTACJA STANU GRY]
-
-Teraz, gdy masz gotowy podstawowy szkielet naszej strony HTML, możesz przejść do integracji z biblioteką PixiJS, która będzie podstawą dla Twojej gry. Zaczynamy od dodania skryptu, który pobiera bibliotekę PixiJS bezpośrednio z jej oficjalnego źródła. W sekcji `script`, wskazujesz na wersję 8.  2.0 tej biblioteki. Następnie dodajesz kolejny skrypt, tym razem z biblioteki Pixi Sound. Jest to rozszerzenie PixiJS, które pozwala Ci na łatwe dodawanie dźwięków do gry. Pobierasz ją z repozytorium na GitHubie i wskazujesz na wersję 6.0.0. Dźwięki w grze to bardzo ważny element, który zwiększa immersję i sprawia, że rozgrywka staje się bardziej angażująca.
-
-Po zaimportowaniu tych bibliotek, tworzysz kolejny blok `script`, w którym ustawiasz `type` na `module`. Na razie zostawiasz ten blok pusty, ale to właśnie tutaj będziesz pisać kod, który będzie odpowiedzialny za całą logikę naszej gry. W kolejnych krokach zaczniesz implementować poszczególne funkcje i elementy, które sprawią, że Twoja gra ożyje na ekranie.
-
-Utworzymy instancję aplikacji PixiJS, która będzie podstawowym narzędziem do renderowania grafiki na naszej stronie. Aby to zrobić, wywołujesz konstruktor `PIXI.Application`, co tworzy nową aplikację PixiJS.
-
-Kolejnym krokiem jest inicjalizacja tej aplikacji przy użyciu metody `init`. Przekaż konfigurację naszej aplikacji. Po pierwsze, ustawiasz `autoDensity`, co sprawia, że PixiJS automatycznie dostosuje rozdzielczość renderowania w zależności od urządzenia, na którym gra jest uruchamiana. Dalej, konfiguruj aplikację, aby jej rozmiar był automatycznie dopasowany do rozmiaru okna przeglądarki. Ustawiasz opcję `resizeTo` na document.body, co oznacza, że Twoja gra zawsze będzie wypełniać całe dostępne okno przeglądarki. Na koniec, dodaj aplikację do strony HTML. Zrobisz to, dołączając płótno (`canvas`), na którym PixiJS będzie rysować naszą grę, bezpośrednio do elementu body strony. Używasz do tego metody `appendChild`, która wstawia płótno PixiJS jako ostatni element w `body`.
+Zacznijmy od stworzenia szkieletu gry 'Łapacz jabłek'. Pierwszym krokiem jest przygotowanie strony HTML, która będzie bazą dla powstającej gry. Ustaw kodowanie znaków, tytuł strony i styl strony z grą. Ustaw marginesy html i body na 0px, co usunie domyślne odstępy wokół treści. Następnie, dla obu tych elementów, ustaw wysokość na 99.5%, co sprawi, że strona zajmuje praktycznie całą wysokość przeglądarki.
 
 [PREZENTACJA STANU GRY]
 
-W tym etapie zajmiesz się dodaniem głównego bohatera Twojej gry, czyli postaci gracza, na ekran. Rozpoczynasz od załadowania tekstury dla gracza, czyli obrazu, który będzie reprezentował postać. Używasz do tego funkcji `PIXI.Assets.load`, która wczytuje grafikę z pliku o nazwie `gracz.png`. Po załadowaniu, ustawiasz tryb skalowania tej tekstury na `nearest`, co zapewni, że podczas powiększania lub pomniejszania obraz zachowa ostre krawędzie, zamiast być rozmyty.
+Teraz, gdy masz gotowy podstawowy szkielet strony HTML, możesz przejść do integracji z biblioteką PixiJS, która będzie podstawą dla Twojej gry. Zaczynij od dodania skryptu, który pobiera bibliotekę PixiJS bezpośrednio z jej oficjalnego źródła. W sekcji `script`, wskaż na wersję 8.2.0 tej biblioteki. Następnie dodaj kolejny skrypt, tym razem z biblioteki Pixi Sound. Pobierz ją z repozytorium na GitHubie i wskaż na wersję 6.0.0. Pixi Sound to rozszerzenie PixiJS, które pozwoli Ci na łatwe dodawanie dźwięków do gry. Dźwięki w grze to bardzo ważny element, który zwiększa immersję i sprawia, że rozgrywka staje się bardziej angażująca.
+
+Po zaimportowaniu tych bibliotek, stwórz kolejny blok `script`, w którym ustawiasz `type` na `module`. Na razie zostawiasz ten blok pusty, ale to właśnie tutaj będziesz pisać kod, który będzie odpowiedzialny za całą logikę naszej gry. W kolejnych krokach zaczniesz implementować poszczególne funkcje i elementy, które sprawią, że Twoja gra ożyje na ekranie.
+
+Utwórz teraz instancję aplikacji PixiJS, która będzie podstawowym narzędziem do renderowania grafiki na tworzonej stronie. Aby to zrobić, wywołaj konstruktor `PIXI.Application`, co stworzy nową aplikację PixiJS.
+
+Kolejnym krokiem jest inicjalizacja aplikacji PixiJS przy użyciu metody `init`. Przekaż konfigurację tworzonej aplikacji. Po pierwsze, ustaw `autoDensity`, co sprawia, że PixiJS automatycznie dostosuje rozdzielczość renderowania w zależności od urządzenia, na którym gra jest uruchamiana. Dalej, skonfiguruj aplikację tak, aby jej rozmiar był automatycznie dopasowany do rozmiaru okna przeglądarki. Ustaw opcję `resizeTo` na document.body, co oznacza, że Twoja gra zawsze będzie wypełniać całe dostępne okno przeglądarki. Na koniec, dodaj aplikację do strony HTML. Zrobisz to, dołączając płótno (`canvas`), na którym PixiJS będzie rysować naszą grę, bezpośrednio do elementu body tworzonej strony. Użyj do tego metody `appendChild`, która wstawia płótno PixiJS jako ostatni element w `body`.
+
+[PREZENTACJA STANU GRY]
+
+W tym etapie zajmiesz się dodaniem głównego bohatera Twojej gry, czyli postaci gracza, na ekran. Rozpocznij od załadowania tekstury dla gracza, czyli obrazu, który będzie reprezentował postać. Użyj do tego funkcji `PIXI.Assets.load`, która wczytuje grafikę z pliku o nazwie `gracz.png`. Po załadowaniu, ustaw tryb skalowania tej tekstury na `nearest`, co zapewni, że podczas powiększania lub pomniejszania, obraz zachowa ostre krawędzie, zamiast być rozmyty.
 
 Kiedy tekstura jest już gotowa, tworzysz na jej podstawie obiekt gracza przy użyciu `PIXI.Sprite.from`. Obiekty `Sprite` to podstawowe elementy graficzne w PixiJS, które możemy dowolnie pozycjonować, skalować i animować na scenie.
 
-Kolejnym krokiem jest ustawienie pozycji gracza na ekranie. Umieszczasz go na środku szerokości ekranu, co osiągniesz, dzieląc szerokość płótna przez dwa i przypisując tę wartość do współrzędnej x gracza. Następnie ustawiasz gracza tuż nad dolną krawędzią ekranu, odejmując wysokość jego postaci i 10 pikseli marginesu od wysokości płótna i przypisując to do współrzędnej y.
+Kolejnym krokiem jest ustawienie pozycji gracza na ekranie. Umieść go na środku szerokości ekranu, co osiągniesz, dzieląc szerokość płótna przez dwa i przypisując tę wartość do współrzędnej x gracza. Następnie ustaw gracza tuż nad dolną krawędzią ekranu, odejmując wysokość jego postaci i 10 pikseli marginesu od wysokości płótna i przypisując to do współrzędnej y.
 
-Dostosowujesz skalę gracza, aby był dobrze widoczny na ekranie. Używasz do tego metody `scale.set`, aby powiększyć jego rozmiar trzykrotnie w obu kierunkach - zarówno poziomym, jak i pionowym. Dzięki temu postać będzie wystarczająco duża, aby była łatwo rozpoznawalna podczas rozgrywki.
+Dostosuj skalę gracza, aby był dobrze widoczny na ekranie. Użyj do tego metody `scale.set`, aby powiększyć jego rozmiar trzykrotnie w obu kierunkach - zarówno poziomym, jak i pionowym. Dzięki temu postać będzie wystarczająco duża, aby była łatwo rozpoznawalna podczas rozgrywki.
 
-Ustawiasz także punkt obrotu gracza na środek jego postaci, używając metody `anchor.set(0.5)`. Dzięki temu wszelkie obracanie i skalowanie postaci będzie odbywać się względem jej środka, co jest szczególnie istotne w przypadku animacji i interakcji z obiektami w grze.
+Ustaw też punkt obrotu gracza na środek jego postaci, używając metody `anchor.set(0.5)`. Dzięki temu wszelkie obracanie i skalowanie postaci będzie odbywać się względem jej środka, co jest szczególnie istotne w przypadku animacji i interakcji z obiektami w grze.
 
-Na końcu, dodajesz postać gracza do sceny gry za pomocą `app.stage.addChild(player)`. W ten sposób nasz bohater pojawia się na ekranie i jest gotowy do dalszych interakcji w grze.
+Na końcu, dodaj postać gracza do sceny gry za pomocą `app.stage.addChild(player)`. W ten sposób nasz bohater pojawi się na ekranie i jest gotowy do dalszych interakcji w grze.
 
 [PREZENTACJA STANU GRY]
 
@@ -350,35 +350,35 @@ Pamiętaj, aby zawsze sprawdzać warunki licencji i respektować prawa twórców
 - Implementacja gry krok po kroku, a w wyznaczonych momentach zaprezentowanie obecnego stanu gry w przeglądarce (uruchomiona w tle w Live Server). Fragmenty pomiędzy prezentacjami stanu gry odpowiadają kolejnym commitom na branchu `gra`.
 
 **Narracja**:
-"Dodaj teraz tło, analogicznie do tekstury gracza: ładujesz tło i ustawiasz tryb skalowania, a następnie tworzysz obiekt `Sprite`. Następnie, aby tło idealnie wypełniało cały obszar gry, ustawiasz jego szerokość na szerokość płótna, czyli okna przeglądarki, oraz wysokość na pełną wysokość ekranu. Dodajesz tło do sceny gry.
+"Dodaj teraz tło, analogicznie do tekstury gracza: załaduj tło i ustaw tryb skalowania, a następnie stwórz obiekt `Sprite`. Następnie, aby tło idealnie wypełniało cały obszar gry, ustaw jego szerokość na szerokość płótna, czyli okna przeglądarki, oraz wysokość na pełną wysokość ekranu. Dodaj tło do sceny gry.
 
 [PREZENTACJA STANU GRY]
 
 W tej części naszej gry zajmiesz się dodaniem podstawowego sterowania postacią gracza. Zaczynasz od ustawienia początkowej prędkości gracza na wartość zero, co oznacza, że na początku gry postać nie porusza się w żadnym kierunku.
 
-Aby umożliwić graczowi kontrolowanie postaci, dodajesz nasłuch na zdarzenia klawiatury, które będą reagować na naciśnięcia i puszczenie klawiszy strzałek. Pierwszy nasłuch to `keydown`, który uruchamia się w momencie wciśnięcia klawisza. Jeżeli gracz naciśnie strzałkę w lewo, prędkość gracza zostaje ustawiona na wartość ujemną, co spowoduje, że postać zacznie poruszać się w lewo. Analogicznie, jeżeli gracz naciśnie strzałkę w prawo, prędkość zostanie ustawiona na wartość dodatnią, co sprawi, że postać będzie poruszać się w prawo.
+Aby umożliwić graczowi kontrolowanie postaci, dodajesz nasłuch na zdarzenia klawiatury, które będą reagować na naciśnięcia i puszczenie klawiszy strzałek. Pierwszy nasłuch to `keydown`, który uruchamia się w momencie wciśnięcia klawisza. Jeżeli gracz naciśnie strzałkę w lewo, prędkość gracza zostanie ustawiona na wartość ujemną, co spowoduje, że postać zacznie poruszać się w lewo. Analogicznie, jeżeli gracz naciśnie strzałkę w prawo, prędkość zostanie ustawiona na wartość dodatnią, co sprawi, że postać będzie poruszać się w prawo.
 
 Kolejny nasłuch, `keyup`, działa wtedy, gdy gracz przestaje naciskać klawisz. Jeśli gracz puści strzałkę w lewo lub w prawo, prędkość gracza zostanie zresetowana do zera, co zatrzyma ruch postaci.
 
-Aby zapewnić płynność ruchu, używasz mechanizmu `app.ticker`, który uruchamia się w każdej klatce animacji. W każdej klatce aktualizujesz pozycję gracza, dodając do jego współrzędnej poziomej wartość jego prędkości. Dzięki temu gracz porusza się w zadanym kierunku z odpowiednią prędkością.
+Aby zapewnić płynność ruchu, użyj mechanizmu `app.ticker`, który uruchamia się w każdej klatce animacji. W każdej klatce aktualizuj pozycję gracza, dodając do jego współrzędnej poziomej wartość jego prędkości. Dzięki temu gracz będzie poruszał się w zadanym kierunku z odpowiednią prędkością.
 
-Na koniec, aby zapobiec sytuacji, w której postać gracza wychodzi poza ekran, dodajemy ograniczenie. Zastosowaliśmy funkcje `Math.max` i `Math.min`, które kontrolują, czy postać nie przekroczyła granic ekranu. Jeśli gracz zbliży się do lewej lub prawej krawędzi, jego pozycja zostanie odpowiednio skorygowana, aby nie wyszedł poza widoczny obszar gry.
+Na koniec, aby zapobiec sytuacji, w której postać gracza wychodzi poza ekran, dodaj następujące ograniczenie. Zastosuj funkcje `Math.max` i `Math.min`, które kontrolują, czy postać nie przekroczyła granic ekranu. Jeśli gracz zbliży się do lewej lub prawej krawędzi, jego pozycja zostanie odpowiednio skorygowana, aby nie wyszedł poza widoczny obszar gry.
 
 [PREZENTACJA STANU GRY]
 
-Wprowadzimy mechanizmy generowania spadających jabłek, które gracz będzie musiał złapać. Podobnie jak poprzednio, ładujesz teksturę obiektu. Następnie tworzysz tablicę `objects`, która będzie przechowywać wszystkie aktualnie spadające obiekty w grze.
+Wprowadzimy mechanizmy generowania spadających jabłek, które gracz będzie musiał złapać. Podobnie jak poprzednio, załaduj teksturę obiektu. Następnie stworz tablicę `objects`, która będzie przechowywać wszystkie aktualnie spadające obiekty w grze.
 
-Główna część kodu to funkcja `spawnObject`, która odpowiada za tworzenie nowych spadających obiektów. Na początku w tej funkcji tworzysz nowy obiekt typu `Sprite` na bazie załadowanej wcześniej tekstury. Ustawiasz jego początkową pozycję poziomą na losową wartość w obrębie szerokości ekranu, ale tak, aby nie wykraczał on poza granice. Pozycja pionowa jest ustawiona tuż nad górną krawędzią ekranu.
+Główna część kodu to funkcja `spawnObject`, która odpowiada za tworzenie nowych spadających obiektów. Na początku w tej funkcji stwórz nowy obiekt typu `Sprite` na bazie załadowanej wcześniej tekstury. Ustaw jego początkową pozycję poziomą na losową wartość w obrębie szerokości ekranu, ale tak, aby nie wykraczał on poza granice. Pozycja pionowa jest ustawiona tuż nad górną krawędzią ekranu.
 
 Prędkość pionowa (`vy`) jest ustalona na wartość 1, co oznacza, że obiekt będzie się poruszał w dół ze stałą prędkością. Dodatkowo obiekt jest skalowany, aby był nieco większy niż jego pierwotny rozmiar.
 
-Następnie dodajesz ten nowo utworzony obiekt do sceny oraz do tablicy `objects`, dzięki czemu będziesz mogła zarządzać jego ruchem oraz interakcjami w kolejnych krokach. Ostatnim elementem jest wywołanie funkcji `spawnObject`, która inicjuje cały proces. Funkcja ta będzie wywoływać samą siebie z określoną częstotliwością co 3 sekundy.
+Następnie dodaj ten nowo utworzony obiekt do sceny oraz do tablicy `objects`, dzięki czemu będziesz mogła zarządzać jego ruchem oraz interakcjami w kolejnych krokach. Ostatnim elementem jest wywołanie funkcji `spawnObject`, która inicjuje cały proces. Funkcja ta będzie wywoływać samą siebie z określoną częstotliwością co 3 sekundy.
 
 [PREZENTACJA STANU GRY]
 
-W tej chwili jabłka jeszcze nie spadają z góry ekranu, dlatego w tym momencie skupimy się na aktualizowaniu pozycji spadających obiektów. Najpierw dodajesz funkcję, która będzie regularnie wywoływana, dzięki mechanizmowi `ticker` wbudowanemu w PixiJS. Funkcja ta jest kluczowa, ponieważ umożliwia nam aktualizowanie stanu gry w każdym klatce animacji.
+W tej chwili jabłka jeszcze nie spadają z góry ekranu, dlatego w tym momencie skupimy się na aktualizowaniu pozycji spadających obiektów. Najpierw dodaj funkcję, która będzie regularnie wywoływana, dzięki mechanizmowi `ticker` wbudowanemu w PixiJS. Funkcja ta jest kluczowa, ponieważ umożliwia na aktualizowanie stanu gry w każdym klatce animacji.
 
-Główna część funkcji to pętla, która przechodzi przez każdy obiekty w tablicy `objects`. Dla każdego z tych obiektów zwiększasz jego współrzędną pionową y o wartość `vy`, co sprawia, że obiekt przesuwa się w dół ekranu z ustaloną wcześniej prędkością.
+Główna część funkcji to pętla, która przechodzi przez każdy obiekty w tablicy `objects`. Dla każdego z tych obiektów zwiększasz jego współrzędną pionową y o wartość `vy`, co sprawia, że obiekt będzie przesuwał się w dół ekranu z ustaloną wcześniej prędkością.
 
 Kolejnym krokiem jest sprawdzenie, czy obiekt nie wyszedł poza dolną krawędź ekranu. Jeśli tak się stanie, obiekt zostaje usunięty zarówno ze sceny, jak i z tablicy objects. Wykorzystujemy do tego metodę `getBounds()`, która zwraca aktualne granice obiektu. Sprawdzasz, czy dolna krawędź obiektu (`maxY`) znajduje się poniżej wysokości ekranu. Jeśli tak, obiekt jest usuwany ze sceny za pomocą removeChild, a następnie aktualizujemy tablicę objects, usuwając z niej referencję do tego obiektu.
 
@@ -386,21 +386,21 @@ Ten proces jest kluczowy dla optymalizacji gry, ponieważ zapobiega nadmiernemu 
 
 [PREZENTACJA STANU GRY]
 
-Zaimplementujesz teraz funkcję odpowiedzialną za wykrywanie kolizji między graczem, a spadającymi obiektami. Tworzysz funkcję `hitTestRectangle`, która przyjmuje dwa argumenty: gracza oraz obiekt. Wewnątrz tej funkcji najpierw pobierasz granice obu elementów na ekranie, czyli obszary, w których się one znajdują. Granice te są reprezentowane przez współrzędne krawędzi prostokątów otaczających te elementy.
+Zaimplementuj teraz funkcję odpowiedzialną za wykrywanie kolizji między graczem, a spadającymi obiektami. Stwórz funkcję `hitTestRectangle`, która przyjmuje dwa argumenty: gracza oraz obiekt. Wewnątrz tej funkcji najpierw pobierz granice obu elementów na ekranie, czyli obszary, w których się one znajdują. Granice te są reprezentowane przez współrzędne krawędzi prostokątów otaczających te elementy.
 
 Następnie sprawdź, czy obiekt znajduje się całkowicie nad lub pod graczem, poprzez porównanie współrzędnych pionowych ich granic. Jeśli obiekt nie nakłada się na gracza w pionie, zwróć wartość `false`, co oznacza brak kolizji.
 
 Jeśli jednak obiekt znajduje się na tej samej wysokości co gracz, przejdź do sprawdzenia współrzędnych poziomych. Jeśli granice obiektu i gracza przecinają się w poziomie, mamy do czynienia z kolizją, a funkcja zwraca `true`.
 
-Następnie, w funkcji odpowiedzialnej za aktualizację pozycji obiektów, dodaj dodatkową logikę do wykrywania kolizji. Dla każdego obiektu, który spada w dół, najpierw aktualizuj jego pozycję. Następnie, używając funkcji `hitTestRectangle`, sprawdź, czy obiekt zderzył się z graczem. Jeśli kolizja zostanie wykryta, natychmiast usuń obiekt ze sceny oraz z tablicy `objects`.
+Następnie, w funkcji odpowiedzialnej za aktualizację pozycji obiektów, dodaj dodatkową logikę do wykrywania kolizji. Dla każdego obiektu, który spada w dół, najpierw dokonaj aktualizacji jego pozycji. Następnie, używając funkcji `hitTestRectangle`, sprawdź, czy obiekt zderzył się z graczem. Jeśli kolizja zostanie wykryta, natychmiast usuń obiekt ze sceny oraz z tablicy `objects`.
 
 [PREZENTACJA STANU GRY]
 
 Teraz dodaj istotne elementy zarządzające wynikami, życiami oraz końcem gry, a także wprowadzimy tekst informacyjny na ekranie.
 
-Tworzysz trzy elementy tekstowe przy użyciu PIXI. Pierwszy z nich to tekst wyniku, który wyświetla aktualny wynik w lewym górnym rogu ekranu. Drugi to tekst liczby żyć, który umieszczamy w prawym górnym rogu. Ostatni element to główny tekst, który będzie wyświetlał komunikaty końcowe i umieszczamy go w centrum ekranu.
+Stwórz trzy elementy tekstowe przy użyciu PIXI. Pierwszy z nich to tekst wyniku, który wyświetla aktualny wynik w lewym górnym rogu ekranu. Drugi to tekst liczby żyć, który umieszczamy w prawym górnym rogu. Ostatni element to główny tekst, który będzie wyświetlał komunikaty końcowe i umieszczamy go w centrum ekranu.
 
-Te teksty są aktualizowane dynamicznie w trakcie gry. Zacznij od dodania logiki do zwiększania wyniku. W momencie, gdy wykryjemy kolizję między graczem a obiektem, dodajemy do wyniku 10 punktów. Tekst wyświetlający wynik jest aktualizowany, aby odzwierciedlić nową wartość punktacji. To sprawia, że gra staje się bardziej dynamiczna i nagradza gracza za udane interakcje. Jeśli obiekt spadnie poza ekran, zmniejsz liczbę żyć gracza o 1 i aktualizujemy tekst wyświetlający liczbę pozostałych żyć. Kiedy liczba żyć spadnie do 0, oznacza to koniec gry. Wtedy wyświetlasz na środku ekranu komunikat 'Koniec gry!', wyśrodkowując tekst zarówno w pionie, jak i w poziomie. Zatrzymujesz animację i generator obiektów, aby uniknąć dalszego tworzenia nowych przeszkód.
+Stworzone elementy tekstowe są aktualizowane dynamicznie w trakcie gry. Zacznij od dodania logiki do zwiększania wyniku. W momencie, gdy zostanie wykryta kolizja między graczem a obiektem, dodaj do wyniku 10 punktów. Tekst wyświetlający wynik jest aktualizowany, aby odzwierciedlić nową wartość punktacji. To sprawia, że gra staje się bardziej dynamiczna i nagradza gracza za udane interakcje. Jeśli obiekt spadnie poza ekran, zmniejsz liczbę żyć gracza o 1 i zaktualizuj tekst wyświetlający liczbę pozostałych żyć. Kiedy liczba żyć spadnie do 0, oznacza to koniec gry. Wtedy wyświetl na środku ekranu komunikat 'Koniec gry!', wyśrodkowując tekst zarówno w pionie, jak i w poziomie. Kiedy gra się skończy powinieneś zatrzymać animację i generator obiektów, aby uniknąć dalszego tworzenia nowych przeszkód.
 
 [PREZENTACJA STANU GRY]
 
@@ -410,23 +410,23 @@ Zacznij od załadowania dźwięków, które będą odtwarzane w różnych sytuac
 
 [PREZENTACJA STANU GRY]
 
-Teraz dodaj parametry do Twojej gry, które kontrolują różne aspekty jej rozgrywki oraz wprowadzasz mechanizm zwiększania trudności w trakcie gry.
+Teraz dodaj parametry do Twojej gry, które kontrolują różne aspekty jej rozgrywki oraz wprowadź mechanizm zwiększania trudności w trakcie gry.
 
-Najpierw definiujesz kilka podstawowych parametrów gry, które będą kontrolować prędkość gracza, prędkość obiektów, ilość punktów za złapanie obiektu, częstotliwość generowania obiektów oraz odpowiadające maksymalne lub minimalne wartości.
+Najpierw zdefiniuj kilka podstawowych parametrów gry, które będą kontrolować prędkość gracza, prędkość obiektów, liczbę punktów uzyskanych za złapanie obiektu, częstotliwość generowania obiektów oraz odpowiadające maksymalne lub minimalne wartości.
 
 Zmień sposób ustawiania prędkości gracza. Poprzednio przypisywałaś prędkość bezpośrednio w obsłudze zdarzeń klawiatury, teraz dostosowujesz prędkość gracza do zdefiniowanego parametru `playerSpeed`, co pozwala na łatwiejszą modyfikację i dostosowanie prędkości gracza.
 
-W funkcji generowania obiektów `spawnObject`, dodajesz losowe wartości do prędkości obiektów, co sprawia, że każda instancja obiektu może mieć inną prędkość, co zwiększa dynamikę gry. Zmieniasz również częstotliwość generowania obiektów z 3000 milisekund na wartość określoną przez `objectSpawnRate`.
+W funkcji generowania obiektów `spawnObject`, dodaj losowe wartości do prędkości obiektów, co sprawia, że każda instancja obiektu może mieć inną prędkość, co zwiększa dynamikę gry. Zmień również częstotliwość generowania obiektów z 3000 milisekund na wartość określoną przez `objectSpawnRate`.
 
-Wprowadź teraz mechanizm zwiększania trudności, który jest uruchamiany co 5 sekund. W funkcji `updateDifficulty` stopniowo zwiększasz prędkość gracza, aż do wartości określonej przez `maxPlayerSpeed`, a także analogicznie zwiększamy prędkość obiektów oraz liczbę punktów zdobywanych za złapanie obiektów. Dodatkowo zmniejszasz `objectSpawnRate`, co oznacza, że obiekty będą generowane coraz szybciej, ale nie szybciej niż określona minimalna wartość `objectMinSpawnRate`.
+Wprowadź teraz mechanizm zwiększania trudności, który jest uruchamiany co 5 sekund. W funkcji `updateDifficulty` wprowadź stopniowe zwiększanie prędkości gracza, aż do wartości określonej przez `maxPlayerSpeed`. Analogicznie, zwiększ prędkość obiektów oraz liczbę punktów zdobywanych za złapanie obiektów. Dodatkowo zmniejsz `objectSpawnRate`, co oznacza, że obiekty będą generowane coraz szybciej, ale nie szybciej niż określona minimalna wartość `objectMinSpawnRate`.
 
-Podczas aktualizacji pozycji obiektów dodałaś możliwość zwiększania wyniku o wartość `objectScore` za każdy złapany obiekt. Po zakończeniu gry, zatrzymujesz również zwiększanie trudności rozgrywki.
+Podczas aktualizacji pozycji obiektów dodałaś możliwość zwiększania wyniku o wartość `objectScore` za każdy złapany obiekt. Po zakończeniu gry, zatrzymaj również zwiększanie trudności rozgrywki.
 
 [PREZENTACJA STANU GRY]
 
 Gratulacje! Ukończyłaś właśnie implementację swojej gry! Teraz masz w pełni funkcjonalną grę, w którą zaimplementowałaś sterowanie graczem, łapanie spadających obiektów i radzenie sobie z rosnącą trudnością.
 
-Ale to nie koniec! Aby dalej rozwijać swoje umiejętności i uczynić grę bardziej atrakcyjną, zachęcamy Cię do wykonania zadań domowych, które będą przedstawione za chwilę. Ćwicząc je, będziesz mógła dodać nowe funkcje, poprawić istniejące mechanizmy i udoskonalić swoją grę. To świetna okazja, aby eksperymentować i nauczyć się jeszcze więcej o programowaniu gier w JavaScript.
+Ale to nie koniec! Aby dalej rozwijać swoje umiejętności i uczynić grę bardziej atrakcyjną, zachęcamy Cię do wykonania zadań domowych, które będą przedstawione za chwilę. Ćwicząc je, będziesz mogła dodać nowe funkcje, poprawić istniejące mechanizmy i udoskonalić swoją grę. To świetna okazja, aby eksperymentować i nauczyć się jeszcze więcej o programowaniu gier w języku JavaScript.
 
 Życzymy powodzenia i świetnej zabawy przy rozbudowie gry!"
 
@@ -490,6 +490,6 @@ Ale to nie koniec! Aby dalej rozwijać swoje umiejętności i uczynić grę bard
 - Tytuł: "Koniec części 2"
 
 **Narracja**:
-"Dotarłaś w tym momencie do końca całego kursu. Mamy nadzieję, że zdobyta wiedza zainspiruje Cię do eksplorowania tajników JavaScriptu, a także doda odwagi do udowadniania, że środowisko informatyczne potrzebuje osób takich jak Ty - gotowych i otwartych na wiedzę! Jednocześnie zapraszamy Cię do dalszej nauki i eksperymentowania z JavaScript! Praktyka czyni mistrza!"
+"Dotarłaś w tym momencie do końca całego kursu. Mamy nadzieję, że zdobyta wiedza zainspiruje Cię do eksplorowania tajników języka JavaScript, a także doda odwagi do udowadniania, że środowisko informatyczne potrzebuje osób takich jak Ty - gotowych i otwartych na wiedzę! Jednocześnie zapraszamy Cię do dalszej nauki i eksperymentowania z językiem JavaScript! Praktyka czyni mistrza!"
 
 ---
