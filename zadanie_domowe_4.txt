@@ -1,2 +1,0 @@
-Informacje o typach zmiennych można znaleźć tutaj: https://javascript.info/types
-Dodatkowo, warto przeczytać o konwersjach typów: https://javascript.info/type-conversions
