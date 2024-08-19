@@ -121,6 +121,8 @@ Tablice pozwalają na przechowywanie listy wartości. Możemy uzyskać dostęp d
 
 W JavaScript możemy tworzyć obiekty, które są zbiorami par klucz-wartość, podobnie do słowników w Pythonie. Dostęp do atrybutów obiektu uzyskujemy za pomocą notacji kropkowej lub nawiasów kwadratowych. Możemy dodawać lub modyfikować atrybuty obiektu, a także usuwać je, jeśli są już niepotrzebne.
 
+Prześledźmy jeszcze jeden przykład dotyczący funkcji w JavaScript. Napisz funkcję, która zwraca obiekt na podstawie dwóch argumentów `x` i `y`: zacznij od zdefiniowania funkcji i przekazania do niej argumentów. W ciele funkcji wykonaj obliczenia, takie jak suma, iloczyn, różnica oraz średnia tych argumentów. Następnie utwórz obiekt, w którym kluczami będą na przykład `sum`, `product`, `difference`, `average`, a wartościami wyniki obliczeń. Na końcu funkcji użyj `return`, aby zwrócić ten obiekt. Przetestuj funkcję, wywołując ją z różnymi argumentami i sprawdź, czy zwraca poprawne wyniki.
+
 Instrukcje warunkowe pozwalają na wykonanie kodu w zależności od spełnienia określonych warunków. Możemy używać instrukcji `if-else`, podobnej do tej z Pythona. Zwróć jednak uwagę na konieczność dodania nawiasów wokół warunku, a także inny zapis `else if` zamiast `elif`. Podobnie jak przy funkcjach, należy użyć nawiasów klamrowych. Istnieje również skrócona wersja instrukcji warunkowej, w której w jednej linijce podajemy warunek (bez nawiasów), następnie pytajnik, a na koniec wartości w przypadku gdy warunek jest prawdziwy lub fałszywy odddzielone dwukropkiem.
 
 Pętla `for` jest najbardziej popularna i pozwala na iterację przez określoną liczbę kroków lub przejście po całej sekwencji. W pierwszym przypadku użyj składni pozwalającej na zdefiniowanie zmiennej, warunku stopu oraz inkrementacji w jednej linijce. Przy iteracji po sekwencji wystarczy zdefiniować zmienną i podać nazwę sekwecji, podobnie jak w Pythonie. Możliwe jest również wywołanie funkcji na wszystkich elementach sekwencji przez wywołanie na niej metody `forEach` i podanie funkcji. Możemy również używać pętli `while` i `do-while`, które wykonują kod tak długo, jak długo spełniony jest określony warunek. Różnica pomiędzy nimi polega na tym, że `do-while` zawsze wykona się przynajmniej jeden raz. Analogicznie do Pythona, możemy przerywać pętle za pomocą instrukcji `break` lub przechodzić do następnej iteracji za pomocą instrukcji `continue`.
@@ -470,7 +472,7 @@ Ale to nie koniec! Aby dalej rozwijać swoje umiejętności i uczynić grę bard
   - Dodaj restart (naciśnij spację na początku i po zakończeniu gry).
 
 **Narracja**:
-"Dodasz teraz funkcjonalność restartu gry. Użytkownik będzie mógł nacisnąć spację, aby rozpocząć grę od nowa zarówno na początku, jak i po jej zakończeniu. Wykorzystaj wiedzę na temat obsługi zdarzeń klawiatury i spróbuj resetować stan gry, aby umożliwić jej ponowne uruchomienie."
+"Dodasz teraz funkcjonalność restartu gry. Użytkownik będzie mógł nacisnąć spację, aby rozpocząć grę od nowa zarówno na początku, jak i po jej zakończeniu. Gra nie powinna restartować się w trakcie rozgrywki. Wykorzystaj wiedzę na temat obsługi zdarzeń klawiatury i spróbuj resetować stan gry, aby umożliwić jej ponowne uruchomienie."
 
 ---
 
