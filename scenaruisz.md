@@ -200,7 +200,7 @@ To ćwiczenie pomoże Ci lepiej zrozumieć, jak działają typy zmiennych w jęz
 - Treść:
   - Obiektowy model dokumentu (ang. Document Object Model, DOM) jest to sposób reprezentacji złożonych dokumentów XML i HTML w postaci modelu obiektowego. 
 - Ilustracja: 
-  - Duże drzewo z rozgałęzieniami. Na samej górze drzewa znajduje się prostokąt oznaczony jako document lub HTML. Bezpośrednio pod nim, jako dzieci, są dwa prostokąty oznaczone jako `head` i `body`. Pod `head` mogą być pokazane przykładowe dzieci, takie jak `title` czy `meta`. Pod `body` narysowane są różne węzły reprezentujące typowe elementy HTML, takie jak `h1`, `p`, `div`. Na przykład, `ul` może mieć pod sobą kilka `li`, co ilustruje pojęcie dzieci w węzłach DOM. Każdy węzeł może być przedstawiony jako prostokąt w rónych kolorach w zaleności od typu.
+  - Duże drzewo z rozgałęzieniami. Na samej górze drzewa znajduje się prostokąt oznaczony jako document lub HTML. Bezpośrednio pod nim, jako dzieci, są dwa prostokąty oznaczone jako `head` i `body`. Pod `head` mogą być pokazane przykładowe dzieci, takie jak `title` czy `meta`. Pod `body` narysowane są różne węzły reprezentujące typowe elementy HTML, takie jak `h1`, `a`. Na przykład, `h1` może mieć pod sobą element text "A heading", co ilustruje pojęcie diecka w węzłach DOM. Każdy węzeł może być przedstawiony jako prostokąt w rónych kolorach w zaleności od typu.
   - Jeśli się zmieści, to wynikowa strona HTML odpowiadająca temu drzewu DOM, ewentualnie strzałki pomiędzy wybranymi węzłami i elementami strony.
 
 **Narracja**:
