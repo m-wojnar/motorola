@@ -1,8 +1,8 @@
 # Podstawowy kurs języka JavaScript
 
-Chcesz nauczyć się JavaScript w ciekawy i angażujący sposób? Zapraszamy na nasz kurs, który łączy naukę podstaw tego języka z tworzeniem prostej, ale wciągającej gry! Kurs jest przede wszystkim skierowany do uczestniczek programu TryIT, ale także dla każdego, kto chce w ciekawy sposób poznać podstawy JavaScript. Wymagana jest umiejętność programowania w dowolnym innym języku, abyś posiadał/a znajomość podstawowych struktur używanych w programowaniu.
+Chcesz nauczyć się JavaScript w ciekawy i angażujący sposób? Zapraszamy na nasz kurs, który łączy naukę podstaw tego języka z tworzeniem prostej, ale wciągającej gry! Kurs jest przede wszystkim skierowany do uczestniczek programu Girls Go IT, ale także dla każdego, kto chce w ciekawy sposób poznać podstawy JavaScript. Wymagana jest umiejętność programowania w dowolnym innym języku, abyś posiadała znajomość podstawowych struktur używanych w programowaniu.
 
-Podczas kursu nauczysz się podstaw składni JavaScript, manipulacji DOM, a na koniec zbudujesz grę "Łapanie Jabłek" przy użyciu biblioteki PixiJS. Po ukończeniu kursu będziesz umiał/a:
+Podczas kursu nauczysz się podstaw składni JavaScript, manipulacji DOM, a na koniec zbudujesz grę "Łapanie Jabłek" przy użyciu biblioteki PixiJS. Po ukończeniu kursu będziesz umiała:
 
 - pisać skrypty JavaScript od podstaw,
 - wykorzystywać obiektowy model dokumentu (DOM) do manipulacji stroną,
@@ -59,20 +59,18 @@ Aby uruchamiać pliki HTML z kodem JavaScript w przeglądarce, należy zainstalo
 ## 2. Czysty JavaScript
 
 Pierwsza właściwa część kursu ma na celu zapoznać kursanta ze składnią języka JavaScript, podstawowymi instrukcjami oraz obsługi konsoli dewelopera JS w przeglądarce. Aby przejść do tej części kursu, należy wykonać komendę:
-```bash
-git checkout -t origin/czesc-2
 
-# lub, jeżeli branch został wcześniej pobrany na lokalne repozytorium:
+```bash
 git checkout czesc-2
 ```
 
 ### Konsola dewelopera
 
-Aby wykonywać proste skrypty JS, zalecamy korzystanie z konsoli dewelopera w przeglądarce. Aby otowrzyć konsolę dewelopera w polecanej przeglądarce Chrome, można użyć klawisza `F12`. Taka konsola, oprócz wyświetlania komunikatów i błędów, pozwala na interaktywne uruchamianie kodu JS (aby umożliwić wklejanie kodu do konsoli, należy zaznaczyć opcję `alow pasting`).
+Aby wykonywać proste skrypty JS, zalecamy korzystanie z konsoli dewelopera w przeglądarce. Aby otworzyć konsolę dewelopera w polecanej przeglądarce Chrome, można użyć klawisza `F12`. Taka konsola, oprócz wyświetlania komunikatów i błędów, pozwala na interaktywne uruchamianie kodu JS (aby umożliwić wklejanie kodu do konsoli, należy zaznaczyć opcję `allow pasting`).
 
 #### **Zadanie domowe 1**
 
-Przeanalizuj zawartość wybranej strony internetowej (np. [https://www.tryit.org.pl/pl/](https://www.tryit.org.pl/pl/)).
+Przeanalizuj zawartość strony internetowej [https://www.tryit.org.pl/pl/](https://www.tryit.org.pl/pl/). Zbadaj menu "O NAS" i sprawdź jak wygląda struktura tego elementu oraz pojawiającego się menu. Jakie `id` mają poszczególne elementy menu?
 
 ### Nauka składni języka JavaScript
 
@@ -97,7 +95,7 @@ function getRandomInt(min, max) {
 }
 ```
 
-*Rozwiązanie*: przykładowe rozwązanie zadania znajduje się na branchu [`zadanie-domowe-2`](https://github.com/m-wojnar/motorola/pull/2).
+*Rozwiązanie*: przykładowe rozwiązanie znajduje się na branchu [`zadanie-domowe-2`](https://github.com/m-wojnar/motorola/pull/2).
 
 ### Więcej informacji
 
@@ -107,17 +105,15 @@ Gdzie szukać więcej informacji:
 
 #### **Zadanie domowe 3**
 
-W dokumentacji znajdź informacje o typach zmiennych w JS i spróbuj napisać kilka instrukcji warunkowych ze zmiennymi różnych typów
+W dokumentacji JavaScript znajdź informacje o typach zmiennych, takich jak liczby, łańcuchy znaków (string), wartości logiczne (bool), `null` czy `undefined`. Zwróć uwagę na konwersję typów, która może występować automatycznie podczas porównywania zmiennych. Następnie napisz kilka instrukcji warunkowych, które pokazują różnicę między operatorem porównania (==) i ścisłego porównania (===). Porównaj liczby z łańcuchami znaków, wartości logiczne z liczbami, `null` z `undefined`, a także obiekty. W każdym przypadku użyj zarówno operatora ==, jak i ===, aby zobaczyć różnice.
 
-*Rozwiązanie*: przykładowe rozwązanie zadania znajduje się na branchu [`zadanie-domowe-3`](https://github.com/m-wojnar/motorola/pull/5)
+*Rozwiązanie*: przykładowe rozwiązanie znajduje się na branchu [`zadanie-domowe-3`](https://github.com/m-wojnar/motorola/pull/5)
 
 ## 3. Obiektowy Model Dokumentu
 
 Obiektowy Model Dokumentu (ang. Document Object Model, DOM) to reprezentacja dokumentu HTML w postaci drzewa obiektów. Pozwala na manipulację zawartością strony internetowej za pomocą języka JavaScript. Aby przejść do tej części kursu, należy wykonać komendę:
-```bash
-git checkout -t origin/czesc-3
 
-# lub, jeżeli branch został wcześniej pobrany na lokalne repozytorium:
+```bash
 git checkout czesc-3
 ```
 
@@ -136,15 +132,13 @@ W tej części, kursant poznaje DOM poprzez następujące zadania:
 
 Zmień kolor pudełka na jasnozielony, jeśli liczba kliknięć jest parzysta, a w przeciwnym przypadku zmień kolor na czerwony.
 
-*Rozwiązanie*: przykładowe rozwązanie zadania znajduje się na branchu [`zadanie-domowe-4`](https://github.com/m-wojnar/motorola/pull/4).
+*Rozwiązanie*: przykładowe rozwiązanie znajduje się na branchu [`zadanie-domowe-4`](https://github.com/m-wojnar/motorola/pull/4).
 
 ## 4. Gra w Łapanie Jabłek
 
 Ostatnia część kursu to zebranie wszystkich dotychczasowych umiejętności w jednym projekcie - grze w łapanie jabłek. Aby przejść do tej części kursu, należy wykonać komendę:
-```bash
-git checkout -t origin/czesc-4
 
-# lub, jeżeli branch został wcześniej pobrany na lokalne repozytorium:
+```bash
 git checkout czesc-4
 ```
 
@@ -158,7 +152,7 @@ Jeśli chcesz dowiedzieć się więcej o PixiJS, zapraszamy do zapoznania się 
 
 ### Projektowanie gry
 
-W tej części kursu, kursant poznaje podstawy tworzenia gier w PixiJS poprzez projekt gry w łapanie jabłek. Zadania skłądające się na projekt:
+W tej części kursu, kursant poznaje podstawy tworzenia gier w PixiJS poprzez projekt gry w łapanie jabłek. Zadania składające się na projekt:
 
 - [`commit 1080bb2`](https://github.com/m-wojnar/motorola/pull/6/commits/1080bb2bdc0f82611c66669b01960fb35980a2c0) Szablon strony
 - [`commit c19b8ad`](https://github.com/m-wojnar/motorola/pull/6/commits/c19b8ad03da075fa1316efa2a2ccea858de4f3b9) Dodanie skryptów PixiJS
@@ -180,10 +174,10 @@ W tej części kursu, kursant poznaje podstawy tworzenia gier w PixiJS poprzez p
 3. Dodaj restart (naciśnij spację na początku i po zakończeniu gry)
 4. Dodaj tablicę wyników (pokaż 3 najlepsze wyniki na ekranie końca gry)
 
-*Rozwiązanie*: przykładowe rozwązanie zadania znajduje się na branchu [`zadanie-domowe-5`](https://github.com/m-wojnar/motorola/pull/7).
+*Rozwiązanie*: przykładowe rozwiązanie znajduje się na branchu [`zadanie-domowe-5`](https://github.com/m-wojnar/motorola/pull/7).
 
 ## 5. Podsumowanie
 
-Gratulacje! Ukończyłeś podstawowy kurs języka JavaScript. Teraz powinieneś znać podstawy składni języka, umieć pracować z DOM, a także tworzyć proste gry w PixiJS. Jeśli masz jakieś pytania, uwagi lub sugestie, napisz do nas na adres: TODO
+Gratulacje! Ukończyłaś podstawowy kurs języka JavaScript. Teraz powinieneś znać podstawy składni języka, umieć pracować z DOM, a także tworzyć proste gry w PixiJS. Jeśli masz jakieś pytania, uwagi lub sugestie, napisz do nas na adres: TODO
 
-Całość rozwiązań znajdziesz na branchu [`wszysto`](https://github.com/m-wojnar/motorola/tree/wszystko).
+Całość rozwiązań znajdziesz na branchu [`wszystko`](https://github.com/m-wojnar/motorola/tree/wszystko).
