@@ -72,6 +72,8 @@ Aby wykonywać proste skrypty JS, zalecamy korzystanie z konsoli dewelopera w p
 
 Przeanalizuj zawartość strony internetowej [https://www.tryit.org.pl/pl/](https://www.tryit.org.pl/pl/). Zbadaj menu "O NAS" i sprawdź jak wygląda struktura tego elementu oraz pojawiającego się menu. Jakie `id` mają poszczególne elementy menu?
 
+*Rozwiązanie*: przykładowe rozwiązanie znajduje się na branchu [`zadanie-domowe-1`](https://github.com/m-wojnar/motorola/pull/10).
+
 ### Nauka składni języka JavaScript
 
 Mając dostęp do interaktywnej konsoli, możemy wykonać zadania z pliku [`czesc_2.js`](https://github.com/m-wojnar/motorola/blob/czesc-2/czesc_2.js). Nawigujemy po kolejnych zdanaiach (commitach):
