@@ -8,7 +8,7 @@
 - Tytuł: "Podstawowy kurs języka JavaScript - Część 1"
 
 **Narracja**:
-"Witaj w pierwszej części kursu opracowanego przez fundację TryIT, poświęconego jezykowi programowania JavaScript! Dzięki niemu będziesz mogła rozszerzyć wiedzę zdobytą podczas warsztatów. Przystępna forma filmiku instruktażowego pozwala na podążanie za kolejnymi etapami we własnym tempie. W tym odcinku nauczymy Cię podstaw języka JavaScript oraz pracy z Obiektowym Modelem Dokumentu (DOM). Już teraz zachęcamy Cię do rozwiązania dodatkowych zadań, które dla Ciebie przygotowaliśmy, które mają na celu ugruntowanie zdobywanej wiedzy. 
+"Witaj w pierwszej części kursu opracowanego przez fundację TryIT, poświęconego językowi programowania JavaScript! Dzięki niemu będziesz mogła rozszerzyć wiedzę zdobytą podczas warsztatów. Przystępna forma filmiku instruktażowego pozwala na podążanie za kolejnymi etapami we własnym tempie. W tym odcinku nauczymy Cię podstaw języka JavaScript oraz pracy z Obiektowym Modelem Dokumentu (DOM). Już teraz zachęcamy Cię do rozwiązania dodatkowych zadań, które dla Ciebie przygotowaliśmy, które mają na celu ugruntowanie zdobywanej wiedzy. 
 
 Niniejszy kurs jest przeznaczony dla uczestniczek programu "Girls Go IT" oraz wszystkich, którzy chcą nauczyć się JavaScript w ciekawy sposób. Aby w pełni skorzystać z kursu, wymagana jest umiejętność programowania w dowolnym innym języku, w szczególności znajomość podstawowych struktur używanych w programowaniu."
 
@@ -46,7 +46,7 @@ Niniejszy kurs jest przeznaczony dla uczestniczek programu "Girls Go IT" oraz ws
   2. Aby zobaczyć historię commitów, użyj polecenia: `git log`.
 
 **Narracja**:
-"Aby móc z łatwością korzystać z tego kursu, warto użyć oprogramowania do kontroli wersji kodu. Najpopularniejszym rozwiązaniem jest `git`, na temat którego możesz znaleźć w internecie wiele wartościowych materiałów. Jeśli nie masz jeszcze zainstowanego gita, możesz skorzystać z instrukcji instalacji na stronie GitHub (https://github.com/git-guides/install-git).
+"Aby móc z łatwością korzystać z tego kursu, warto użyć oprogramowania do kontroli wersji kodu. Najpopularniejszym rozwiązaniem jest `git`, na temat którego możesz znaleźć w internecie wiele wartościowych materiałów. Jeśli nie masz jeszcze zainstalowanego gita, możesz skorzystać z instrukcji instalacji na stronie GitHub (https://github.com/git-guides/install-git).
 
 Zobacz, jak poruszać się po kursie. Na początek, otwórz w przeglądarce repozytorium z kodem. Po lewej stronie widnieje zakładka "branches". Kliknij na nią, aby zobaczyć listę wszystkich dostępnych branchy (odgałęzień) w repozytorium. Jak widzisz, mamy kilka branchy (gałęzi), które odpowiadają poszczególnym fragmentom kursu i zadaniom domowym. Teraz przejdź do zakładki "Pull requests" i wybierz "pull request" związany z pierwszą częścią kursu. Widoczny jest spis commitów, które były częścią tego "pull request". Kliknij na jeden z nich, aby zobaczyć zmiany w kodzie dotyczące danego zadania. Teraz znajdź "pull request" z zadaniem domowym. Otwierając go, możesz przejrzeć przykładowe rozwiązania zadania domowego w zakładce "Files changed".
 
@@ -117,15 +117,15 @@ Stałe deklarujemy używając słowa kluczowego `const`. Stałym nie można przy
 
 Funkcje w JavaScript można tworzyć na kilka sposobów. W tradycyjnej deklaracji funkcji używamy słowa kluczowego `function`, po którym następuje nazwa funkcji, parametry i jej zawartość. Możemy również użyć funkcji strzałkowych, które są bardziej zwięzłe i czasami wygodniejsze w użyciu. W JavaScript bloki kodu otoczone są nawiasami klamrowymi, w przeciwieństwie do Pythona, gdzie do wyodrębnienia bloku używane są spacje lub tabulatory.
 
-Tablice pozwalają na przechowywanie listy wartości. Możemy uzyskać dostęp do elementów tablicy za pomocą indeksów lub metody `at` w mowych wersjach JavaScript. Analogicznie zachowują się łańcuchy znaków. Za pomocą metody `push` można dodać nowy element na końcu tablicy, natomiast `pop` pozwala usuwać ostatni element. Możemy również usuwać dowolne elementy z tablicy za pomocą specjalnej metody `splice`, której argumentami jest pozycja w tablicy oraz liczba elementów do usunięcia.
+Tablice pozwalają na przechowywanie listy wartości. Możemy uzyskać dostęp do elementów tablicy za pomocą indeksów lub metody `at` w nowych wersjach JavaScript. Analogicznie zachowują się łańcuchy znaków. Za pomocą metody `push` można dodać nowy element na końcu tablicy, natomiast `pop` pozwala usuwać ostatni element. Możemy również usuwać dowolne elementy z tablicy za pomocą specjalnej metody `splice`, której argumentami jest pozycja w tablicy oraz liczba elementów do usunięcia.
 
 W JavaScript możemy tworzyć obiekty, które są zbiorami par klucz-wartość, podobnie do słowników w Pythonie. Dostęp do atrybutów obiektu uzyskujemy za pomocą notacji kropkowej lub nawiasów kwadratowych. Możemy dodawać lub modyfikować atrybuty obiektu, a także usuwać je, jeśli są już niepotrzebne.
 
 Prześledźmy jeszcze jeden przykład dotyczący funkcji w JavaScript. Napisz funkcję, która zwraca obiekt na podstawie dwóch argumentów `x` i `y`: zacznij od zdefiniowania funkcji i przekazania do niej argumentów. W ciele funkcji wykonaj obliczenia, takie jak suma, iloczyn, różnica oraz średnia tych argumentów. Następnie utwórz obiekt, w którym kluczami będą na przykład `sum`, `product`, `difference`, `average`, a wartościami wyniki obliczeń. Na końcu funkcji użyj `return`, aby zwrócić ten obiekt. Przetestuj funkcję, wywołując ją z różnymi argumentami i sprawdź, czy zwraca poprawne wyniki.
 
-Instrukcje warunkowe pozwalają na wykonanie kodu w zależności od spełnienia określonych warunków. Możemy używać instrukcji `if-else`, podobnej do tej z Pythona. Zwróć jednak uwagę na konieczność dodania nawiasów wokół warunku, a także inny zapis `else if` zamiast `elif`. Podobnie jak przy funkcjach, należy użyć nawiasów klamrowych. Istnieje również skrócona wersja instrukcji warunkowej, w której w jednej linijce podajemy warunek (bez nawiasów), następnie pytajnik, a na koniec wartości w przypadku gdy warunek jest prawdziwy lub fałszywy odddzielone dwukropkiem.
+Instrukcje warunkowe pozwalają na wykonanie kodu w zależności od spełnienia określonych warunków. Możemy używać instrukcji `if-else`, podobnej do tej z Pythona. Zwróć jednak uwagę na konieczność dodania nawiasów wokół warunku, a także inny zapis `else if` zamiast `elif`. Podobnie jak przy funkcjach, należy użyć nawiasów klamrowych. Istnieje również skrócona wersja instrukcji warunkowej, w której w jednej linijce podajemy warunek (bez nawiasów), następnie pytajnik, a na koniec wartości w przypadku gdy warunek jest prawdziwy lub fałszywy oddzielone dwukropkiem.
 
-Pętla `for` jest najbardziej popularna i pozwala na iterację przez określoną liczbę kroków lub przejście po całej sekwencji. W pierwszym przypadku użyj składni pozwalającej na zdefiniowanie zmiennej, warunku stopu oraz inkrementacji w jednej linijce. Przy iteracji po sekwencji wystarczy zdefiniować zmienną i podać nazwę sekwecji, podobnie jak w Pythonie. Możliwe jest również wywołanie funkcji na wszystkich elementach sekwencji przez wywołanie na niej metody `forEach` i podanie funkcji. Możemy również używać pętli `while` i `do-while`, które wykonują kod tak długo, jak długo spełniony jest określony warunek. Różnica pomiędzy nimi polega na tym, że `do-while` zawsze wykona się przynajmniej jeden raz. Analogicznie do Pythona, możemy przerywać pętle za pomocą instrukcji `break` lub przechodzić do następnej iteracji za pomocą instrukcji `continue`.
+Pętla `for` jest najbardziej popularna i pozwala na iterację przez określoną liczbę kroków lub przejście po całej sekwencji. W pierwszym przypadku użyj składni pozwalającej na zdefiniowanie zmiennej, warunku stopu oraz inkrementacji w jednej linijce. Przy iteracji po sekwencji wystarczy zdefiniować zmienną i podać nazwę sekwencji, podobnie jak w Pythonie. Możliwe jest również wywołanie funkcji na wszystkich elementach sekwencji przez wywołanie na niej metody `forEach` i podanie funkcji. Możemy również używać pętli `while` i `do-while`, które wykonują kod tak długo, jak długo spełniony jest określony warunek. Różnica pomiędzy nimi polega na tym, że `do-while` zawsze wykona się przynajmniej jeden raz. Analogicznie do Pythona, możemy przerywać pętle za pomocą instrukcji `break` lub przechodzić do następnej iteracji za pomocą instrukcji `continue`.
 
 Na koniec omówimy klasy w JavaScript. Klasa to definicja struktury danych zawierająca właściwości i metody. Stwórz klasę `Person` (osoba), która będzie zawierać własności `name` (imię) oraz `age` (wiek). W tym celu dodaj konstruktor za pomocą słowa kluczowego `constructor`, który przyjmuje dwa argumenty i przypisuje wartości odpowiednim polom przez odwołanie do `this` (analogicznie do `self` w Pythonie). Dodaj również metodę `isAdult` sprawdzającą czy osoba jest pełnoletnia. Zwróć uwagę, że nie używamy słowa kluczowego `function`. Możemy tworzyć obiekty na podstawie klasy, dlatego stwórz dwa obiekty - osobę o imieniu "Jan" i wieku 15 lat. Wywołaj metodę `isAdult` i sprawdź czy wynik jest poprawny, a następnie stwórz obiekt dla 30-letniej "Janiny" i sprawdź wynik wywołania metody.
 ""
@@ -153,7 +153,7 @@ Na koniec omówimy klasy w JavaScript. Klasa to definicja struktury danych zawie
 
 "W zadaniu domowym 2 należy stworzyć funkcję, która przyjmuje dwa argumenty: imię i wiek użytkownika. Twoim celem jest, aby funkcja zwracała obiekt zawierający imię, wiek, informację o pełnoletniości użytkownika oraz informację o parzystości wieku.
 
-Następnie powinieneś utworzyć listę z 5 imionami i napisać pętlę, która przechodzi po wszystkich elementach tej listy. W każdej iteracji powienieneś podać imię użytkownika i wylosować jego wiek przy użyciu funkcji `getRandomInt`. Jeśli wiek użytkownika będzie liczbą parzystą, wypisz jego dane na ekranie.
+Następnie powinnaś utworzyć listę z 5 imionami i napisać pętlę, która przechodzi po wszystkich elementach tej listy. W każdej iteracji powinnaś podać imię użytkownika i wylosować jego wiek przy użyciu funkcji `getRandomInt`. Jeśli wiek użytkownika będzie liczbą parzystą, wypisz jego dane na ekranie.
 
 Oto funkcja `getRandomInt`, która losuje liczbę całkowitą z zadanego przedziału (min, max). Użyj jej do losowania wieku użytkowników."
 
@@ -200,7 +200,7 @@ To ćwiczenie pomoże Ci lepiej zrozumieć, jak działają typy zmiennych w jęz
 - Treść:
   - Obiektowy model dokumentu (ang. Document Object Model, DOM) jest to sposób reprezentacji złożonych dokumentów XML i HTML w postaci modelu obiektowego. 
 - Ilustracja: 
-  - Duże drzewo z rozgałęzieniami. Na samej górze drzewa znajduje się prostokąt oznaczony jako document lub HTML. Bezpośrednio pod nim, jako dzieci, są dwa prostokąty oznaczone jako `head` i `body`. Pod `head` mogą być pokazane przykładowe dzieci, takie jak `title` czy `meta`. Pod `body` narysowane są różne węzły reprezentujące typowe elementy HTML, takie jak `h1`, `a`. Na przykład, `h1` może mieć pod sobą element text "A heading", co ilustruje pojęcie diecka w węzłach DOM. Każdy węzeł może być przedstawiony jako prostokąt w rónych kolorach w zaleności od typu.
+  - Duże drzewo z rozgałęzieniami. Na samej górze drzewa znajduje się prostokąt oznaczony jako document lub HTML. Bezpośrednio pod nim, jako dzieci, są dwa prostokąty oznaczone jako `head` i `body`. Pod `head` mogą być pokazane przykładowe dzieci, takie jak `title` czy `meta`. Pod `body` narysowane są różne węzły reprezentujące typowe elementy HTML, takie jak `h1`, `a`. Na przykład, `h1` może mieć pod sobą element text "A heading", co ilustruje pojęcie dziecka w węzłach DOM. Każdy węzeł może być przedstawiony jako prostokąt w różnych kolorach w zależności od typu.
   - Jeśli się zmieści, to wynikowa strona HTML odpowiadająca temu drzewu DOM, ewentualnie strzałki pomiędzy wybranymi węzłami i elementami strony.
 
 **Narracja**:
@@ -241,9 +241,9 @@ Przejdźmy teraz do modyfikacji listy. Używając `setInterval`, a więc metody,
   - Zmień kolor pudełka na czerwony, jeśli liczba kliknięć jest nieparzysta.
 
 **Narracja**:
-"Czwarte zadanie domowe polega na manipulacji elementami HTML przy użyciu skyprtu napisanego w jęzku JavaScript. Twoim zadaniem jest stworzenie prostego interaktywnego pudełka, którego kolor zmienia się w zależności od liczby kliknięć.
+"Czwarte zadanie domowe polega na manipulacji elementami HTML przy użyciu skryptu napisanego w języku JavaScript. Twoim zadaniem jest stworzenie prostego interaktywnego pudełka, którego kolor zmienia się w zależności od liczby kliknięć.
 
-Wykorzystaj element `div` o klasie typu `boz`. Następnie w JavaScript napisz funkcję, która będzie zliczać kliknięcia na pudełko. W zależności od tego, czy liczba kliknięć jest parzysta czy nieparzysta, zmień kolor pudełka odpowiednio na jasnozielony lub czerwony. W rozwiązaniu tego zdania przydadzą Ci się funkcje, których używaliśmy w przedstawionych przykładach, m.in. `addEventListener`."
+Wykorzystaj element `div` o klasie typu `box`. Następnie w JavaScript napisz funkcję, która będzie zliczać kliknięcia na pudełko. W zależności od tego, czy liczba kliknięć jest parzysta czy nieparzysta, zmień kolor pudełka odpowiednio na jasnozielony lub czerwony. W rozwiązaniu tego zdania przydadzą Ci się funkcje, których używaliśmy w przedstawionych przykładach, m.in. `addEventListener`."
 
 ---
 
@@ -277,7 +277,7 @@ Wykorzystaj element `div` o klasie typu `boz`. Następnie w JavaScript napisz fu
 - Tytuł: "Podstawowy kurs języka JavaScript - Część 2"
 
 **Narracja**:
-"Witaj w drugiej części kursu dotyczącego języka JavaScript stworzonego przez fundację TryIT! W tym odcinku nauczysz się jak stworzyć własną grę w przeglądarce, za pomocą języka JavaScript! Jeśli nie oglądałaś jeszcze pierwszej częście tego kursu, sugerujemy obejrzenie jej w pierwszej kolejności, jeszcze przed przystąpieniem do implementacji gry. Ułatwi Ci to wykonanie zadań z drugiej części kursu."
+"Witaj w drugiej części kursu dotyczącego języka JavaScript stworzonego przez fundację TryIT! W tym odcinku nauczysz się jak stworzyć własną grę w przeglądarce, za pomocą języka JavaScript! Jeśli nie oglądałaś jeszcze pierwszej części tego kursu, sugerujemy obejrzenie jej w pierwszej kolejności, jeszcze przed przystąpieniem do implementacji gry. Ułatwi Ci to wykonanie zadań z drugiej części kursu."
 
 ---
 
@@ -310,7 +310,7 @@ Zacznijmy od stworzenia szkieletu gry 'Łapacz jabłek'. Pierwszym krokiem jest 
 
 [PREZENTACJA STANU GRY]
 
-Teraz, gdy masz gotowy podstawowy szkielet strony HTML, możesz przejść do integracji z biblioteką PixiJS, która będzie podstawą dla Twojej gry. Zaczynij od dodania skryptu, który pobiera bibliotekę PixiJS bezpośrednio z jej oficjalnego źródła. W sekcji `script`, wskaż na wersję 8.2.0 tej biblioteki. Następnie dodaj kolejny skrypt, tym razem z biblioteki Pixi Sound. Pobierz ją z repozytorium na GitHubie i wskaż na wersję 6.0.0. Pixi Sound to rozszerzenie PixiJS, które pozwoli Ci na łatwe dodawanie dźwięków do gry. Dźwięki w grze to bardzo ważny element, który zwiększa immersję i sprawia, że rozgrywka staje się bardziej angażująca.
+Teraz, gdy masz gotowy podstawowy szkielet strony HTML, możesz przejść do integracji z biblioteką PixiJS, która będzie podstawą dla Twojej gry. Zacznij od dodania skryptu, który pobiera bibliotekę PixiJS bezpośrednio z jej oficjalnego źródła. W sekcji `script`, wskaż na wersję 8.2.0 tej biblioteki. Następnie dodaj kolejny skrypt, tym razem z biblioteki Pixi Sound. Pobierz ją z repozytorium na GitHubie i wskaż na wersję 6.0.0. Pixi Sound to rozszerzenie PixiJS, które pozwoli Ci na łatwe dodawanie dźwięków do gry. Dźwięki w grze to bardzo ważny element, który zwiększa immersję i sprawia, że rozgrywka staje się bardziej angażująca.
 
 Po zaimportowaniu tych bibliotek, stwórz kolejny blok `script`, w którym ustawiasz `type` na `module`. Na razie zostaw ten blok pusty, ale to właśnie tutaj będziesz pisać kod, który będzie odpowiedzialny za całą logikę naszej gry. W kolejnych krokach zaczniesz implementować poszczególne funkcje i elementy, które sprawią, że Twoja gra ożyje na ekranie.
 
@@ -365,7 +365,7 @@ Pamiętaj, aby zawsze sprawdzać warunki licencji i respektować prawa twórców
 
 [PREZENTACJA STANU GRY]
 
-Dodaj teraz podstawowe sterowania postacią gracza. Zaczynij od ustawienia początkowej prędkości gracza na wartość zero, co oznacza, że na początku gry postać nie porusza się w żadnym kierunku.
+Dodaj teraz podstawowe sterowania postacią gracza. Zacznij od ustawienia początkowej prędkości gracza na wartość zero, co oznacza, że na początku gry postać nie porusza się w żadnym kierunku.
 
 Aby umożliwić graczowi kontrolowanie postaci, dodaj nasłuch na zdarzenia klawiatury, które będą reagować na naciśnięcia i puszczenie klawiszy strzałek. Pierwszy nasłuch to `keydown`, który uruchamia się w momencie wciśnięcia klawisza. Jeżeli gracz naciśnie strzałkę w lewo, prędkość gracza zostanie ustawiona na wartość ujemną, co spowoduje, że postać zacznie poruszać się w lewo. Analogicznie, jeżeli gracz naciśnie strzałkę w prawo, prędkość zostanie ustawiona na wartość dodatnią, co sprawi, że postać będzie poruszać się w prawo.
 
@@ -377,7 +377,7 @@ Na koniec, aby zapobiec sytuacji, w której postać gracza wychodzi poza ekran, 
 
 [PREZENTACJA STANU GRY]
 
-Wprowadźmy mechanizm generowania spadających jabłek, które gracz będzie musiał złapać. Podobnie jak poprzednio, załaduj teksturę obiektu. Następnie stworz tablicę `objects`, która będzie przechowywać wszystkie aktualnie spadające obiekty w grze.
+Wprowadźmy mechanizm generowania spadających jabłek, które gracz będzie musiał złapać. Podobnie jak poprzednio, załaduj teksturę obiektu. Następnie stwórz tablicę `objects`, która będzie przechowywać wszystkie aktualnie spadające obiekty w grze.
 
 Główna część kodu to funkcja `spawnObject`, która odpowiada za tworzenie nowych spadających obiektów. Na początku w tej funkcji stwórz nowy obiekt typu `Sprite` na bazie załadowanej wcześniej tekstury. Ustaw jego początkową pozycję poziomą na losową wartość w obrębie szerokości ekranu, ale tak, aby nie wykraczał on poza granice. Pozycja pionowa jest ustawiona tuż nad górną krawędzią ekranu.
 
@@ -407,7 +407,7 @@ Następnie, w funkcji odpowiedzialnej za aktualizację pozycji obiektów, dodaj 
 
 Teraz dodaj elementy informujące o wyniku, życiach oraz końcu gry. Stwórz trzy elementy tekstowe przy użyciu PIXI. Pierwszy z nich to tekst wyniku, który wyświetla aktualny wynik w lewym górnym rogu ekranu. Drugi to tekst liczby żyć, który umieszczamy w prawym górnym rogu. Ostatni element to główny tekst, który będzie wyświetlał komunikaty końcowe i umieszczamy go w centrum ekranu.
 
-Stworzone elementy tekstowe są aktualizowane dynamicznie w trakcie gry. Zacznij od dodania logiki do zwiększania wyniku. W momencie, gdy zostanie wykryta kolizja między graczem a obiektem, dodaj do wyniku 10 punktów. Tekst wyświetlający wynik jest aktualizowany, aby odzwierciedlić nową wartość punktacji. To sprawia, że gra staje się bardziej dynamiczna i nagradza gracza za udane interakcje. Jeśli obiekt spadnie poza ekran, zmniejsz liczbę żyć gracza o 1 i zaktualizuj tekst wyświetlający liczbę pozostałych żyć. Kiedy liczba żyć spadnie do 0, oznacza to koniec gry. Wtedy wyświetl na środku ekranu komunikat 'Koniec gry!', wyśrodkowując tekst zarówno w pionie, jak i w poziomie. Kiedy gra się skończy powinieneś zatrzymać animację i generator obiektów, aby uniknąć dalszego tworzenia nowych przeszkód.
+Stworzone elementy tekstowe są aktualizowane dynamicznie w trakcie gry. Zacznij od dodania logiki do zwiększania wyniku. W momencie, gdy zostanie wykryta kolizja między graczem a obiektem, dodaj do wyniku 10 punktów. Tekst wyświetlający wynik jest aktualizowany, aby odzwierciedlić nową wartość punktacji. To sprawia, że gra staje się bardziej dynamiczna i nagradza gracza za udane interakcje. Jeśli obiekt spadnie poza ekran, zmniejsz liczbę żyć gracza o 1 i zaktualizuj tekst wyświetlający liczbę pozostałych żyć. Kiedy liczba żyć spadnie do 0, oznacza to koniec gry. Wtedy wyświetl na środku ekranu komunikat 'Koniec gry!', wyśrodkowując tekst zarówno w pionie, jak i w poziomie. Kiedy gra się skończy powinnaś zatrzymać animację i generator obiektów, aby uniknąć dalszego tworzenia nowych przeszkód.
 
 [PREZENTACJA STANU GRY]
 
@@ -518,7 +518,7 @@ Ale to nie koniec! Aby dalej rozwijać swoje umiejętności i uczynić grę bard
 **Narracja**:
 "Podsumujmy teraz wspólnie spędzony czas i wymieńmy umiejętności, które zyskałaś uczestnicząc w tym kursie.
 
-Rozpocznięliśmy od przygotowania środowiska pracy, instalacji i konfiguracji edytora oraz nauki korzystania z systemu kontroli wersji. W części pierwszej skupiliśmy się na podstawach języka JavaScript, takich jak zmienne, operatory, funkcje, tablice i obiekty, a także nauczyliśmy się, jak manipulować strukturą DOM naszej strony.
+Rozpoczęliśmy od przygotowania środowiska pracy, instalacji i konfiguracji edytora oraz nauki korzystania z systemu kontroli wersji. W części pierwszej skupiliśmy się na podstawach języka JavaScript, takich jak zmienne, operatory, funkcje, tablice i obiekty, a także nauczyliśmy się, jak manipulować strukturą DOM naszej strony.
 
 Druga część kursu wprowadziła Cię w świat tworzenia gier przy użyciu biblioteki PixiJS. Dowiedziałaś się, jak tworzyć postacie i obiekty w grze oraz jak implementować funkcje takie jak interakcja z użytkownikiem, ruch, kolizje, dźwięki i zmieniająca się trudność. Stworzyliśmy wspólnie pełnopraną grę w przeglądarce!"
 
