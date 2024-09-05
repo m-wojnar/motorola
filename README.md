@@ -70,7 +70,7 @@ Aby wykonywać proste skrypty JS, zalecamy korzystanie z konsoli dewelopera w p
 
 #### **Zadanie domowe 1**
 
-Przeanalizuj zawartość wybranej strony internetowej (np. [https://www.tryit.org.pl/pl/](https://www.tryit.org.pl/pl/)).
+Przeanalizuj zawartość strony internetowej [https://www.tryit.org.pl/pl/](https://www.tryit.org.pl/pl/). Zbadaj menu "O NAS" i sprawdź jak wygląda struktura tego elementu oraz pojawiającego się menu. Jakie `id` mają poszczególne elementy menu?
 
 ### Nauka składni języka JavaScript
 
@@ -105,7 +105,7 @@ Gdzie szukać więcej informacji:
 
 #### **Zadanie domowe 3**
 
-W dokumentacji znajdź informacje o typach zmiennych w JS i spróbuj napisać kilka instrukcji warunkowych ze zmiennymi różnych typów
+W dokumentacji JavaScript znajdź informacje o typach zmiennych, takich jak liczby, łańcuchy znaków (string), wartości logiczne (bool), `null` czy `undefined`. Zwróć uwagę na konwersję typów, która może występować automatycznie podczas porównywania zmiennych. Następnie napisz kilka instrukcji warunkowych, które pokazują różnicę między operatorem porównania (==) i ścisłego porównania (===). Porównaj liczby z łańcuchami znaków, wartości logiczne z liczbami, `null` z `undefined`, a także obiekty. W każdym przypadku użyj zarówno operatora ==, jak i ===, aby zobaczyć różnice.
 
 *Rozwiązanie*: przykładowe rozwiązanie znajduje się na branchu [`zadanie-domowe-3`](https://github.com/m-wojnar/motorola/pull/5)
 

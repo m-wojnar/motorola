@@ -88,10 +88,10 @@ Przejdź teraz do sklonowania repozytorium kursu. Otwórz terminal lub konsolę 
 **Opis slajdu**:
 - Tytuł: "Zadanie domowe 1"
 - Treść:
-  - Przeanalizuj zawartość wybranej strony internetowej (np. tryit.org.pl).
+  - Przeanalizuj zawartość strony internetowej [https://www.tryit.org.pl/pl/](https://www.tryit.org.pl/pl/). Zbadaj menu "O NAS" i sprawdź, jak wygląda struktura tego elementu oraz pojawiającego się menu. Jakie `id` mają poszczególne elementy menu?
 
 **Narracja**:
-"Pierwsze zadanie domowe polega na analizie zawartości wybranej strony internetowej, na przykład tryit.org.pl. Użyj konsoli dewelopera, aby zbadać wybrane elementy strony."
+"Pierwsze zadanie domowe polega na analizie zawartości strony internetowej tryit.org.pl. Użyj konsoli dewelopera, aby zobaczyć kod źródłowy wskazanych elementów strony i odpowiedzieć na powyższe pytania."
 
 ---
 
@@ -181,8 +181,7 @@ Zachęcamy Cię do regularnego odwiedzania dokumentacji, eksperymentowania z kod
 **Opis slajdu**:
 - Tytuł: "Zadanie domowe 3"
 - Treść:
-  - W dokumentacji znajdź informacje o typach zmiennych występujących w języku JavaScript.
-  - Spróbuj napisać kilka instrukcji warunkowych ze zmiennymi różnych typów.
+  - W dokumentacji JavaScript znajdź informacje o typach zmiennych, takich jak liczby, łańcuchy znaków (string), wartości logiczne (bool), `null` czy `undefined`. Zwróć uwagę na konwersję typów, która może występować automatycznie podczas porównywania zmiennych. Następnie napisz kilka instrukcji warunkowych, które pokazują różnicę między operatorem porównania (==) i ścisłego porównania (===). Porównaj liczby z łańcuchami znaków, wartości logiczne z liczbami, `null` z `undefined`, a także obiekty. W każdym przypadku użyj zarówno operatora ==, jak i ===, aby zobaczyć różnice.
 
 **Narracja**:
 Trzecie zadanie domowe polega na zapoznaniu się z typami zmiennych w języku JavaScript. Zacznij od przeszukania dokumentacji, aby znaleźć szczegółowe informacje o różnych typach zmiennych, takich jak zmienne łańcuchowe (string), liczby, wartości logiczne (boolean), zmienne bez przypisanej wartości (typ null), zmienne niezdefiniowane (typ undefined).
